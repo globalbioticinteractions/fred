@@ -89,7 +89,7 @@
         "titles" : "Plant taxonomy_Family_Data source",
         "datatype" : "string"
       }, {
-        "name" : "sourceTaxonFamilyGenusName",
+        "name" : "sourceTaxonGenusName",
         "titles" : "Plant taxonomy_Genus_Data Source",
         "datatype" : "string"
       }, {
