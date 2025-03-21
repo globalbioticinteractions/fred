@@ -15,6 +15,7 @@
     "interactionTypeName": "symbiontOf",
     "interactionTypeId": "http://purl.obolibrary.org/obo/RO_0002440",
     "sourceBodyPartName" : "root",
+    "sourceBodyPartId" : "http://purl.obolibrary.org/obo/PO_0025025",
     "targetTaxonKingdomName": "Fungi",
     "null" : [ "" ],
     "tableSchema" : {
