@@ -15,6 +15,7 @@
     "interactionTypeName": "symbiontOf",
     "interactionTypeId": "http://purl.obolibrary.org/obo/RO_0002440",
     "sourceBodyPartName" : "root",
+    "targetTaxonKingdomName": "Fungi",
     "null" : [ "" ],
     "tableSchema" : {
       "columns" : [ {
@@ -2418,12 +2419,9 @@
         "titles" : "SE_Mycorrhiza_PLFA proxy for mycorrhizal hyphal C per soil mass",
         "datatype" : "string"
       }, {
-        "name" : "targetTaxonId",
+        "name" : "targetTaxonName",
         "titles" : "Mycorrhiza_Type_Data source",
-        "datatype" : {
-           "type": "string",
-           "valueUrl": "FRED:Mycorrhiza:{targetTaxonId}"
-        } 
+        "datatype" : "string"
       }, {
         "name" : "Mycorrhiza_Visual estimate of root colonization intensity",
         "titles" : "Mycorrhiza_Visual estimate of root colonization intensity",
