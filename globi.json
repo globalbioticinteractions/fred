@@ -1,0 +1,4682 @@
+{
+  "@context" : [ "http://www.w3.org/ns/csvw", {
+    "@language" : "en"
+  } ],
+  "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+  "tables" : [ {
+    "@context" : [ "http://www.w3.org/ns/csvw", {
+      "@language" : "en"
+    } ],
+    "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+    "url" : "FRED3_Entire_Database_2021.csv.gz",
+    "dcterms:bibliographicCitation" : "Iversen CM, McCormack ML, Baer JK, Powell AS, Chen W, Collins C, Fan Y, Fanin N, Freschet GT, Guo D, Hogan JA, Kou L, Laughlin DC, Lavely E, Liese R, Lin D, Meier IC, Montagnoli A, Roumet C, See CR, Soper F, Terzaghi M, Valverde-Barrantes OJ, Wang C, Wright SJ, Wurzburger N, Zadworny M. 2021. Fine-Root Ecology Database (FRED): A Global Collection of Root Trait Data with Coincident Site, Vegetation, Edaphic, and Climatic Data, Version 3. Oak Ridge National Laboratory, TES SFA, U.S. Department of Energy, Oak Ridge, Tennessee, U.S.A. Access on-line at: https://doi.org/10.25581/ornlsfa.014/1459186.",
+    "delimiter" : ",",
+    "headerRowCount" : 3,
+    "interactionTypeName": "symbiontOf",
+    "interactionTypeId": "http://purl.obolibrary.org/obo/RO_0002440",
+    "sourceBodyPartName" : "root",
+    "null" : [ "" ],
+    "tableSchema" : {
+      "columns" : [ {
+        "name" : "Name",
+        "titles" : "Name",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Row ID",
+        "titles" : "Notes_Row ID",
+        "datatype" : "string"
+      }, {
+        "name" : "Abbreviated article citation",
+        "titles" : "Abbreviated article citation",
+        "datatype" : "string"
+      }, {
+        "name" : "referenceCitation",
+        "titles" : "Data source_Citation",
+        "datatype" : "string"
+      }, {
+        "name" : "referenceDoi",
+        "titles" : "Data source_DOI",
+        "datatype" : "string"
+      }, {
+        "name" : "Data set_Citation",
+        "titles" : "Data set_Citation",
+        "datatype" : "string"
+      }, {
+        "name" : "Data set_DOI",
+        "titles" : "Data set_DOI",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Site ID",
+        "titles" : "Notes_Site ID",
+        "datatype" : "string"
+      }, {
+        "name" : "Data_Raw or unpublished",
+        "titles" : "Data_Raw or unpublished",
+        "datatype" : "string"
+      }, {
+        "name" : "Data_Duplicate data",
+        "titles" : "Data_Duplicate data",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant taxonomy_Accepted group_TPL",
+        "titles" : "Plant taxonomy_Accepted group_TPL",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonOrderName",
+        "titles" : "Plant taxonomy_Accepted order_APW",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonFamilyName",
+        "titles" : "Plant taxonomy_Accepted family_TPL",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonGenusName",
+        "titles" : "Plant taxonomy_Accepted genus_TPL",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonSpecificEpithetName",
+        "titles" : "Plant Taxonomy_Accepted species_TPL",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonSubspeciesName",
+        "titles" : "Plant Taxonomy_Accepted subspecies_TPL",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant taxonomy_Family_Data source",
+        "titles" : "Plant taxonomy_Family_Data source",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant taxonomy_Genus_Data Source",
+        "titles" : "Plant taxonomy_Genus_Data Source",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant taxonomy_Species_Data source",
+        "titles" : "Plant taxonomy_Species_Data source",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant taxonomy_Subspecies_Data source",
+        "titles" : "Plant taxonomy_Subspecies_Data source",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant taxonomy_Species name unresolved",
+        "titles" : "Plant taxonomy_Species name unresolved",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Single or multiple species",
+        "titles" : "Notes_Single or multiple species",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant growth form_TRY",
+        "titles" : "Plant growth form_TRY",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant growth form_Taseski",
+        "titles" : "Plant growth form_Taseski",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant leaf habit TRY",
+        "titles" : "Plant leaf habit TRY",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant leaf type TRY",
+        "titles" : "Plant leaf type TRY",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant woodiness_TRY",
+        "titles" : "Plant woodiness_TRY",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant photosynthetic pathway_TRY",
+        "titles" : "Plant photosynthetic pathway_TRY",
+        "datatype" : "string"
+      }, {
+        "name" : "Belowground part",
+        "titles" : "Belowground part",
+        "datatype" : "string"
+      }, {
+        "name" : "Root order",
+        "titles" : "Root order",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Root order",
+        "titles" : "Min_Root order",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Root order",
+        "titles" : "Max_Root order",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Root order classification scheme",
+        "titles" : "Notes_Root order classification scheme",
+        "datatype" : "string"
+      }, {
+        "name" : "Root functional class",
+        "titles" : "Root functional class",
+        "datatype" : "string"
+      }, {
+        "name" : "Root diameter class_Lower bound",
+        "titles" : "Root diameter class_Lower bound",
+        "datatype" : "string"
+      }, {
+        "name" : "Root diameter class_Upper bound",
+        "titles" : "Root diameter class_Upper bound",
+        "datatype" : "string"
+      }, {
+        "name" : "Root age",
+        "titles" : "Root age",
+        "datatype" : "string"
+      }, {
+        "name" : "Root age_Lower bound",
+        "titles" : "Root age_Lower bound",
+        "datatype" : "string"
+      }, {
+        "name" : "Root age_Upper bound",
+        "titles" : "Root age_Upper bound",
+        "datatype" : "string"
+      }, {
+        "name" : "Root vitality_Roots living or dead",
+        "titles" : "Root vitality_Roots living or dead",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Method of determining dead roots",
+        "titles" : "Notes_Method of determining dead roots",
+        "datatype" : "string"
+      }, {
+        "name" : "Root heterorhizy_Fibrous or pioneering",
+        "titles" : "Root heterorhizy_Fibrous or pioneering",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil depth_Sampling depth",
+        "titles" : "Soil depth_Sampling depth",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil depth_Upper sampling depth",
+        "titles" : "Soil depth_Upper sampling depth",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil depth_Lower sampling depth",
+        "titles" : "Soil depth_Lower sampling depth",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil block_Length",
+        "titles" : "Soil block_Length",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil block_Width",
+        "titles" : "Soil block_Width",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil block_Height",
+        "titles" : "Soil block_Height",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil block_Volume",
+        "titles" : "Soil block_Volume",
+        "datatype" : "string"
+      }, {
+        "name" : "Root aerenchyma porosity fraction",
+        "titles" : "Root aerenchyma porosity fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root aerenchyma porosity fraction",
+        "titles" : "n_Root aerenchyma porosity fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Median_Root porosity fraction",
+        "titles" : "Median_Root porosity fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Root porosity fraction",
+        "titles" : "Min_Root porosity fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Root porosity fraction",
+        "titles" : "Max_Root porosity fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Upper quartile_Root porosity fraction",
+        "titles" : "Upper quartile_Root porosity fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Lower quartile_Root porosity fraction",
+        "titles" : "Lower quartile_Root porosity fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Root aerenchyma fraction of cross section",
+        "titles" : "Root aerenchyma fraction of cross section",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root aerenchyma fraction of cross section",
+        "titles" : "n_Root aerenchyma fraction of cross section",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root aerenchyma fraction of cross section",
+        "titles" : "SE_Root aerenchyma fraction of cross section",
+        "datatype" : "string"
+      }, {
+        "name" : "Root aerenchyma presence",
+        "titles" : "Root aerenchyma presence",
+        "datatype" : "string"
+      }, {
+        "name" : "Root cortex thickness",
+        "titles" : "Root cortex thickness",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root cortex thickness",
+        "titles" : "n_Root cortex thickness",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root cortex thickness",
+        "titles" : "SE_Root cortex thickness",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root cortex thickness",
+        "titles" : "SD_Root cortex thickness",
+        "datatype" : "string"
+      }, {
+        "name" : "Root exodermal wall thickness",
+        "titles" : "Root exodermal wall thickness",
+        "datatype" : "string"
+      }, {
+        "name" : "Root passage cell number in exodermis",
+        "titles" : "Root passage cell number in exodermis",
+        "datatype" : "string"
+      }, {
+        "name" : "Root passage cell number per root circumference",
+        "titles" : "Root passage cell number per root circumference",
+        "datatype" : "string"
+      }, {
+        "name" : "Mycorrhiza_Root length fraction that contains arbuscules",
+        "titles" : "Mycorrhiza_Root length fraction that contains arbuscules",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Mycorrhiza_Root length fraction that contains arbuscules",
+        "titles" : "SE_Mycorrhiza_Root length fraction that contains arbuscules",
+        "datatype" : "string"
+      }, {
+        "name" : "Mycorrhiza_Root length fraction that contains vesicles",
+        "titles" : "Mycorrhiza_Root length fraction that contains vesicles",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Mycorrhiza_Root length fraction that contains vesicles",
+        "titles" : "SE_Mycorrhiza_Root length fraction that contains vesicles",
+        "datatype" : "string"
+      }, {
+        "name" : "Root phellem",
+        "titles" : "Root phellem",
+        "datatype" : "string"
+      }, {
+        "name" : "Root stele cross-sectional fraction",
+        "titles" : "Root stele cross-sectional fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root stele cross-sectional fraction",
+        "titles" : "n_Root stele cross-sectional fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root stele cross-sectional fraction",
+        "titles" : "SE_Root stele cross-sectional fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Root stele diameter",
+        "titles" : "Root stele diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root stele diameter",
+        "titles" : "n_Root stele diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root stele diameter",
+        "titles" : "SE_Root stele diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root stele diameter",
+        "titles" : "SD_Root stele diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "Root stele diameter/root diameter ratio",
+        "titles" : "Root stele diameter/root diameter ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root stele diameter/root diameter ratio",
+        "titles" : "n_Root stele diameter/root diameter ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root stele diameter/root diameter ratio",
+        "titles" : "SE_Root stele diameter/root diameter ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Root stele/root cortex ratio",
+        "titles" : "Root stele/root cortex ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root stele/root cortex ratio",
+        "titles" : "n_Root stele/root cortex ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root stele/root cortex ratio",
+        "titles" : "SE_Root stele/root cortex ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Root conduit number per root stele area",
+        "titles" : "Root conduit number per root stele area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root conduit number per root stele area",
+        "titles" : "n_Root conduit number per root stele area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root conduit number per root stele area",
+        "titles" : "SE_Root conduit number per root stele area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root conduit diameter",
+        "titles" : "Root conduit diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root conduit diameter",
+        "titles" : "n_Root conduit diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root conduit diameter",
+        "titles" : "SE_Root conduit diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "Root conduit wall thickness",
+        "titles" : "Root conduit wall thickness",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root conduit wall thickness",
+        "titles" : "n_Root conduit wall thickness",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root conduit wall thickness",
+        "titles" : "SE_Root conduit wall thickness",
+        "datatype" : "string"
+      }, {
+        "name" : "Root metaxylem cell wall thickness",
+        "titles" : "Root metaxylem cell wall thickness",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root metaxylem cell wall thickness",
+        "titles" : "SE_Root metaxylem cell wall thickness",
+        "datatype" : "string"
+      }, {
+        "name" : "Root metaxylem cell wall thickness/vessel diameter ratio",
+        "titles" : "Root metaxylem cell wall thickness/vessel diameter ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root metaxylem cell wall thickness/vessel diameter ratio",
+        "titles" : "SE_Root metaxylem cell wall thickness/vessel diameter ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Root metaxylem vessel diameter",
+        "titles" : "Root metaxylem vessel diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root metaxylem vessel diameter",
+        "titles" : "SE_Root metaxylem vessel diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "Root number of tracheary elements",
+        "titles" : "Root number of tracheary elements",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root number of tracheary elements",
+        "titles" : "SE_Root number of tracheary elements",
+        "datatype" : "string"
+      }, {
+        "name" : "Root number of vessels",
+        "titles" : "Root number of vessels",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root number of vessels",
+        "titles" : "n_Root number of vessels",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root number of vessels",
+        "titles" : "SE_Root number of vessels",
+        "datatype" : "string"
+      }, {
+        "name" : "Root protoxylem cell wall thickness",
+        "titles" : "Root protoxylem cell wall thickness",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root protoxylem cell wall thickness",
+        "titles" : "SE_Root protoxylem cell wall thickness",
+        "datatype" : "string"
+      }, {
+        "name" : "Root protoxylem cell wall thickness per protoxylem diameter",
+        "titles" : "Root protoxylem cell wall thickness per protoxylem diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root protoxylem cell wall thickness per protoxylem diameter",
+        "titles" : "SE_Root protoxylem cell wall thickness per protoxylem diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "Root protoxylem diameter",
+        "titles" : "Root protoxylem diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root protoxylem diameter",
+        "titles" : "SE_Root protoxylem diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "Root stele cross-sectional area",
+        "titles" : "Root stele cross-sectional area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root stele cross-sectional area",
+        "titles" : "SE_Root stele cross-sectional area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root vessel cross-sectional area",
+        "titles" : "Root vessel cross-sectional area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root vessel cross-sectional area",
+        "titles" : "n_Root vessel cross-sectional area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root vessel cross-sectional area",
+        "titles" : "SE_Root vessel cross-sectional area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root vessel diameter",
+        "titles" : "Root vessel diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root vessel diameter",
+        "titles" : "n_Root vessel diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root vessel diameter",
+        "titles" : "SE_Root vessel diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "Root vessel number per root cross-sectional area",
+        "titles" : "Root vessel number per root cross-sectional area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root vessel number per root cross-sectional area",
+        "titles" : "n_Root vessel number per root cross-sectional area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root xylem cross-sectional area",
+        "titles" : "Root xylem cross-sectional area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_root xylem cross-sectional area",
+        "titles" : "n_root xylem cross-sectional area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_root xylem cross-sectional area",
+        "titles" : "SE_root xylem cross-sectional area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root xylem cross-sectional fraction",
+        "titles" : "Root xylem cross-sectional fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root xylem cross-sectional fraction",
+        "titles" : "n_Root xylem cross-sectional fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root xylem cross-sectional fraction",
+        "titles" : "SE_Root xylem cross-sectional fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Root xylem vessel number per root stele area",
+        "titles" : "Root xylem vessel number per root stele area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root xylem vessel number per root stele area",
+        "titles" : "n_Root xylem vessel number per root stele area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root xylem vessel number per root stele area",
+        "titles" : "SE_Root xylem vessel number per root stele area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root branching architecture_Root length per higher order root length",
+        "titles" : "Root branching architecture_Root length per higher order root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Root branching intensity (branching ratio)_Number of roots per higher order root",
+        "titles" : "Root branching intensity (branching ratio)_Number of roots per higher order root",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root branching intensity (branching ratio)_Number of roots per higher order root",
+        "titles" : "n_Root branching intensity (branching ratio)_Number of roots per higher order root",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root branching intensity (branching ratio)_Number of roots per higher order root",
+        "titles" : "SE_Root branching intensity (branching ratio)_Number of roots per higher order root",
+        "datatype" : "string"
+      }, {
+        "name" : "Root branching intensity_root tips per higher order root length",
+        "titles" : "Root branching intensity_root tips per higher order root length",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root branching intensity_root tips per higher order root length",
+        "titles" : "n_Root branching intensity_root tips per higher order root length",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root branching intensity_root tips per higher order root length",
+        "titles" : "SE_Root branching intensity_root tips per higher order root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Root branching intensity_root tips per higher order root length",
+        "titles" : "Min_Root branching intensity_root tips per higher order root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Root branching intensity_root tips per higher order root length",
+        "titles" : "Max_Root branching intensity_root tips per higher order root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Median_Root branching intensity_root tips per higher order root length",
+        "titles" : "Median_Root branching intensity_root tips per higher order root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Upper quartile_Root branching intensity_root tips per higher order root length",
+        "titles" : "Upper quartile_Root branching intensity_root tips per higher order root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Lower quartile_Root branching intensity_root tips per higher order root length",
+        "titles" : "Lower quartile_Root branching intensity_root tips per higher order root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Root branching intensity_root tips per total root length",
+        "titles" : "Root branching intensity_root tips per total root length",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root branching intensity_root tips per total root length",
+        "titles" : "n_Root branching intensity_root tips per total root length",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root branching intensity_root tips per total root length",
+        "titles" : "SE_Root branching intensity_root tips per total root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Root branching intensity_root tips per total root length",
+        "titles" : "Min_Root branching intensity_root tips per total root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Root branching intensity_root tips per total root length",
+        "titles" : "Max_Root branching intensity_root tips per total root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Root tips per ground area",
+        "titles" : "Root tips per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root tips per ground area",
+        "titles" : "n_Root tips per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root tips per ground area",
+        "titles" : "SE_Root tips per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root tips per minirhizotron frame",
+        "titles" : "Root tips per minirhizotron frame",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root tips per minirhizotron frame",
+        "titles" : "SE_Root tips per minirhizotron frame",
+        "datatype" : "string"
+      }, {
+        "name" : "Root tips per plant",
+        "titles" : "Root tips per plant",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root tips per plant",
+        "titles" : "n_Root tips per plant",
+        "datatype" : "string"
+      }, {
+        "name" : "Root tips per root branch",
+        "titles" : "Root tips per root branch",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root tips per root branch",
+        "titles" : "n_Root tips per root branch",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root tips per root branch",
+        "titles" : "SE_Root tips per root branch",
+        "datatype" : "string"
+      }, {
+        "name" : "Root tips per soil volume",
+        "titles" : "Root tips per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root tips per soil volume",
+        "titles" : "SE_Root tips per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "Specific root tip abundance (SRTA)",
+        "titles" : "Specific root tip abundance (SRTA)",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Specific root tip abundance (SRTA)",
+        "titles" : "n_Specific root tip abundance (SRTA)",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Specific root tip abundance (SRTA)",
+        "titles" : "SE_Specific root tip abundance (SRTA)",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Specific root tip abundance (SRTA)",
+        "titles" : "SD_Specific root tip abundance (SRTA)",
+        "datatype" : "string"
+      }, {
+        "name" : "Root dichotomous branching index",
+        "titles" : "Root dichotomous branching index",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root dichotomous branching index",
+        "titles" : "n_Root dichotomous branching index",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root dichotomous branching index",
+        "titles" : "SE_Root dichotomous branching index",
+        "datatype" : "string"
+      }, {
+        "name" : "Root external path length (Pe)",
+        "titles" : "Root external path length (Pe)",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root external path length (Pe)",
+        "titles" : "n_Root external path length (Pe)",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root external path length (Pe)",
+        "titles" : "SE_Root external path length (Pe)",
+        "datatype" : "string"
+      }, {
+        "name" : "Root forks per root length",
+        "titles" : "Root forks per root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Specific root forks density (SRFD)",
+        "titles" : "Specific root forks density (SRFD)",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Specific root forks density (SRFD)",
+        "titles" : "n_Specific root forks density (SRFD)",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Specific root forks density (SRFD)",
+        "titles" : "SE_Specific root forks density (SRFD)",
+        "datatype" : "string"
+      }, {
+        "name" : "Root fractal dimension",
+        "titles" : "Root fractal dimension",
+        "datatype" : "string"
+      }, {
+        "name" : "Root link branching angle",
+        "titles" : "Root link branching angle",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root link branching angle",
+        "titles" : "n_Root link branching angle",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root link branching angle",
+        "titles" : "SE_Root link branching angle",
+        "datatype" : "string"
+      }, {
+        "name" : "Root link length",
+        "titles" : "Root link length",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root link length",
+        "titles" : "n_Root link length",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root link length",
+        "titles" : "SE_Root link length",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root link length",
+        "titles" : "SD_Root link length",
+        "datatype" : "string"
+      }, {
+        "name" : "Root links per root branch",
+        "titles" : "Root links per root branch",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root links per root branch",
+        "titles" : "n_Root links per root branch",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root links per root branch",
+        "titles" : "SE_Root links per root branch",
+        "datatype" : "string"
+      }, {
+        "name" : "Root topological index (TI)",
+        "titles" : "Root topological index (TI)",
+        "datatype" : "string"
+      }, {
+        "name" : "Root C content",
+        "titles" : "Root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root C content",
+        "titles" : "n_Root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root C content",
+        "titles" : "SE_Root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root C content",
+        "titles" : "SD_Root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Ca content",
+        "titles" : "Root Ca content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root Ca content",
+        "titles" : "n_Root Ca content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root Ca content",
+        "titles" : "SE_Root Ca content",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root Ca content",
+        "titles" : "SD_Root Ca content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Ca content per root fresh mass",
+        "titles" : "Root Ca content per root fresh mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root K content",
+        "titles" : "Root K content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root K content",
+        "titles" : "n_Root K content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root K content",
+        "titles" : "SE_Root K content",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root K content",
+        "titles" : "SD_Root K content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root K content per root fresh mass",
+        "titles" : "Root K content per root fresh mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Mg content",
+        "titles" : "Root Mg content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root Mg content",
+        "titles" : "n_Root Mg content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root Mg content",
+        "titles" : "SE_Root Mg content",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root Mg content",
+        "titles" : "SD_Root Mg content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Mg content per root fresh mass",
+        "titles" : "Root Mg content per root fresh mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root 15N content",
+        "titles" : "Root 15N content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root N content",
+        "titles" : "Root N content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root N content",
+        "titles" : "n_Root N content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root N content",
+        "titles" : "SE_Root N content",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root N content",
+        "titles" : "SD_Root N content",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Root N content",
+        "titles" : "Min_Root N content",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Root N content",
+        "titles" : "Max_Root N content",
+        "datatype" : "string"
+      }, {
+        "name" : "Median_Root N content",
+        "titles" : "Median_Root N content",
+        "datatype" : "string"
+      }, {
+        "name" : "Upper quartile_Root N content",
+        "titles" : "Upper quartile_Root N content",
+        "datatype" : "string"
+      }, {
+        "name" : "Lower quartile_Root N content",
+        "titles" : "Lower quartile_Root N content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root N content per root length",
+        "titles" : "Root N content per root length",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root N content per root length",
+        "titles" : "n_Root N content per root length",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root N content per root length",
+        "titles" : "SE_Root N content per root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Root N_Molar organic N content",
+        "titles" : "Root N_Molar organic N content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root P content",
+        "titles" : "Root P content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root P content",
+        "titles" : "n_Root P content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root P content",
+        "titles" : "SE_Root P content",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root P content",
+        "titles" : "SD_Root P content",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Root P content",
+        "titles" : "Min_Root P content",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Root P content",
+        "titles" : "Max_Root P content",
+        "datatype" : "string"
+      }, {
+        "name" : "Median_Root P content",
+        "titles" : "Median_Root P content",
+        "datatype" : "string"
+      }, {
+        "name" : "Upper quartile_Root P content",
+        "titles" : "Upper quartile_Root P content",
+        "datatype" : "string"
+      }, {
+        "name" : "Lower quartile_Root P content",
+        "titles" : "Lower quartile_Root P content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root P content per root fresh mass",
+        "titles" : "Root P content per root fresh mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root S content",
+        "titles" : "Root S content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root S content",
+        "titles" : "n_Root S content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root S content",
+        "titles" : "SE_Root S content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root S content per root fresh mass",
+        "titles" : "Root S content per root fresh mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Al content",
+        "titles" : "Root Al content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root Al content",
+        "titles" : "n_Root Al content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root Al content",
+        "titles" : "SE_Root Al content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Al content per root fresh mass",
+        "titles" : "Root Al content per root fresh mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root As content",
+        "titles" : "Root As content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root As content",
+        "titles" : "n_Root As content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root As content",
+        "titles" : "SE_Root As content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root B content",
+        "titles" : "Root B content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root B content",
+        "titles" : "n_Root B content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root B content",
+        "titles" : "SE_Root B content",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root B content",
+        "titles" : "SD_Root B content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Cd content",
+        "titles" : "Root Cd content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root Cd content",
+        "titles" : "n_Root Cd content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root Cd content",
+        "titles" : "SE_Root Cd content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Cl- ion content",
+        "titles" : "Root Cl- ion content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root Cl- ion content",
+        "titles" : "SE_Root Cl- ion content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Cr content",
+        "titles" : "Root Cr content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root Cr content",
+        "titles" : "n_Root Cr content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root Cr content",
+        "titles" : "SE_Root Cr content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Cu content",
+        "titles" : "Root Cu content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root Cu content",
+        "titles" : "n_Root Cu content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root Cu content",
+        "titles" : "SE_Root Cu content",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root Cu content",
+        "titles" : "SD_Root Cu content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Fe content",
+        "titles" : "Root Fe content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Mn content",
+        "titles" : "Root Mn content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root Mn content",
+        "titles" : "n_Root Mn content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root Mn content",
+        "titles" : "SE_Root Mn content",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root Mn content",
+        "titles" : "SD_Root Mn content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Mn content per root fresh mass",
+        "titles" : "Root Mn content per root fresh mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Na content",
+        "titles" : "Root Na content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root Na content",
+        "titles" : "SE_Root Na content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Na+ content",
+        "titles" : "Root Na+ content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root Na+ content",
+        "titles" : "SE_Root Na+ content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Ni content",
+        "titles" : "Root Ni content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root Ni content",
+        "titles" : "n_Root Ni content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root Ni content",
+        "titles" : "SE_Root Ni content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Pb content",
+        "titles" : "Root Pb content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root Pb content",
+        "titles" : "n_Root Pb content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root Pb content",
+        "titles" : "SE_Root Pb content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Si content",
+        "titles" : "Root Si content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root Si content",
+        "titles" : "SE_Root Si content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Zn content",
+        "titles" : "Root Zn content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root Zn content",
+        "titles" : "n_Root Zn content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root Zn content",
+        "titles" : "SE_Root Zn content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root construction cost",
+        "titles" : "Root construction cost",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root construction cost",
+        "titles" : "n_Root construction cost",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root construction cost",
+        "titles" : "SE_Root construction cost",
+        "datatype" : "string"
+      }, {
+        "name" : "Root cellulose and hemicellulose content per root mass",
+        "titles" : "Root cellulose and hemicellulose content per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root cellulose content",
+        "titles" : "Root cellulose content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root cellulose content",
+        "titles" : "n_Root cellulose content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root cellulose content",
+        "titles" : "SE_Root cellulose content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root cellulose content per root C content",
+        "titles" : "Root cellulose content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root hemicellulose content per root C content",
+        "titles" : "Root hemicellulose content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root hemicellulose content per root mass",
+        "titles" : "Root hemicellulose content per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root hemicellulose content per root mass",
+        "titles" : "n_Root hemicellulose content per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root hemicellulose content per root mass",
+        "titles" : "SE_Root hemicellulose content per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root 12 phenol content per root C content",
+        "titles" : "Root 12 phenol content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root 12 phenol content per root C content",
+        "titles" : "SE_Root 12 phenol content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root acid hydrolyzable compounds content",
+        "titles" : "Root acid hydrolyzable compounds content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root acid hydrolyzable compounds content",
+        "titles" : "n_Root acid hydrolyzable compounds content",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root acid hydrolyzable compounds content",
+        "titles" : "SD_Root acid hydrolyzable compounds content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root acid hydrolyzable compounds content",
+        "titles" : "SE_Root acid hydrolyzable compounds content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root alkyl C content per root C content",
+        "titles" : "Root alkyl C content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root alkyl C content per root C content",
+        "titles" : "n_Root alkyl C content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root alkyl C content per root C content",
+        "titles" : "SE_Root alkyl C content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root arabinans content",
+        "titles" : "Root arabinans content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root aromatic C content per root C content",
+        "titles" : "Root aromatic C content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root aromatic C content per root C content",
+        "titles" : "n_Root aromatic C content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root aromatic C content per root C content",
+        "titles" : "SE_Root aromatic C content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root ash C content per root C content",
+        "titles" : "Root ash C content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root ash content",
+        "titles" : "Root ash content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root ash content",
+        "titles" : "SE_Root ash content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root bound phenol content per root C content",
+        "titles" : "Root bound phenol content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root bound phenol content per root C content",
+        "titles" : "SE_Root bound phenol content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root cinnamyl phenol content per root C content",
+        "titles" : "Root cinnamyl phenol content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root cinnamyl phenol content per root C content",
+        "titles" : "SE_Root cinnamyl phenol content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root condensed tannins",
+        "titles" : "Root condensed tannins",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root condensed tannins",
+        "titles" : "n_Root condensed tannins",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root condensed tannins",
+        "titles" : "SE_Root condensed tannins",
+        "datatype" : "string"
+      }, {
+        "name" : "Root ethanol soluble fraction",
+        "titles" : "Root ethanol soluble fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Root free phenol content per root C content",
+        "titles" : "Root free phenol content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root free phenol content per root C content",
+        "titles" : "SE_Root free phenol content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root galactans fraction",
+        "titles" : "Root galactans fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Root lignin content",
+        "titles" : "Root lignin content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root lignin content",
+        "titles" : "n_Root lignin content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root lignin content",
+        "titles" : "SE_Root lignin content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root lignin content per root C content",
+        "titles" : "Root lignin content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root lignin phenol content per root C content",
+        "titles" : "Root lignin phenol content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root lignin phenol content per root C content",
+        "titles" : "SE_Root lignin phenol content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root lignin phenol vegetation index (LPVI)",
+        "titles" : "Root lignin phenol vegetation index (LPVI)",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root lignin phenol vegetation index (LPVI)",
+        "titles" : "SE_Root lignin phenol vegetation index (LPVI)",
+        "datatype" : "string"
+      }, {
+        "name" : "Root lipid content",
+        "titles" : "Root lipid content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root lipid content",
+        "titles" : "n_Root lipid content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root lipid content",
+        "titles" : "SE_Root lipid content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mannans content",
+        "titles" : "Root mannans content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root neutral detergent soluble fraction",
+        "titles" : "Root neutral detergent soluble fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Root non-acid hydrolyzable compounds content (NAH)",
+        "titles" : "Root non-acid hydrolyzable compounds content (NAH)",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root non-acid hydrolyzable compounds content",
+        "titles" : "n_Root non-acid hydrolyzable compounds content",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root non-acid hydrolyzable compounds content",
+        "titles" : "SD_Root non-acid hydrolyzable compounds content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root non-acid hydrolyzable compounds content",
+        "titles" : "SE_Root non-acid hydrolyzable compounds content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root nonpolar compounds content",
+        "titles" : "Root nonpolar compounds content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root nonpolar compounds content",
+        "titles" : "n_Root nonpolar compounds content",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root nonpolar compounds content",
+        "titles" : "SD_Root nonpolar compounds content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root nonpolar compounds content",
+        "titles" : "SE_Root nonpolar compounds content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root O-alkyl C content per root C content",
+        "titles" : "Root O-alkyl C content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root O-alkyl C content per root C content",
+        "titles" : "n_Root O-alkyl C content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root O-alkyl C content per root C content",
+        "titles" : "SE_Root O-alkyl C content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root p-hydroxy phenol content per root C content",
+        "titles" : "Root p-hydroxy phenol content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root p-hydroxy phenol content per root C content",
+        "titles" : "SE_Root p-hydroxy phenol content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root phenols content",
+        "titles" : "Root phenols content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root phenols content",
+        "titles" : "n_Root phenols content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root phenols content",
+        "titles" : "SE_Root phenols content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root phenols_chlorogenic acid molarity per root mass",
+        "titles" : "Root phenols_chlorogenic acid molarity per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root polar compounds content",
+        "titles" : "Root polar compounds content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root polar compounds content",
+        "titles" : "n_Root polar compounds content",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root polar compounds content",
+        "titles" : "SD_Root polar compounds content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root polar compounds content",
+        "titles" : "SE_Root polar compounds content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root polyphenol content",
+        "titles" : "Root polyphenol content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root polyphenol content",
+        "titles" : "n_Root polyphenol content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root polyphenol content",
+        "titles" : "SE_Root polyphenol content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root rhamnan content",
+        "titles" : "Root rhamnan content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root starch fraction",
+        "titles" : "Root starch fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Root structural C content per root C content",
+        "titles" : "Root structural C content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root syringyl phenol content per root C content",
+        "titles" : "Root syringyl phenol content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root syringyl phenol content per root C content",
+        "titles" : "SE_Root syringyl phenol content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root vanillyl phenol content per root C content",
+        "titles" : "Root vanillyl phenol content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root vanillyl phenol content per root C content",
+        "titles" : "SE_Root vanillyl phenol content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root water or ethanol soluble compounds fraction",
+        "titles" : "Root water or ethanol soluble compounds fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root water or ethanol soluble compounds fraction",
+        "titles" : "SE_Root water or ethanol soluble compounds fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Root water soluble compounds fraction",
+        "titles" : "Root water soluble compounds fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root water soluble compounds fraction",
+        "titles" : "SE_Root water soluble compounds fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Root water soluble compounds per root mass",
+        "titles" : "Root water soluble compounds per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root water soluble phenol compounds per root mass",
+        "titles" : "Root water soluble phenol compounds per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root water soluble phenol compounds per root mass",
+        "titles" : "n_Root water soluble phenol compounds per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root water soluble phenol compounds per root mass",
+        "titles" : "SE_Root water soluble phenol compounds per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root xylan content",
+        "titles" : "Root xylan content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root 3,5-dihydroxybenzoic acid groups/vanillyl phenols ratio",
+        "titles" : "Root 3,5-dihydroxybenzoic acid groups/vanillyl phenols ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root 3,5-dihydroxybenzoic acid groups/vanillyl phenols ratio",
+        "titles" : "SE_Root 3,5-dihydroxybenzoic acid groups/vanillyl phenols ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Root acid/aldehyde ratio for syringyl phenols",
+        "titles" : "Root acid/aldehyde ratio for syringyl phenols",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root acid/aldehyde ratio for syringyl phenols",
+        "titles" : "SE_Root acid/aldehyde ratio for syringyl phenols",
+        "datatype" : "string"
+      }, {
+        "name" : "Root acid/aldehyde ratio for vanillyl phenols",
+        "titles" : "Root acid/aldehyde ratio for vanillyl phenols",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root acid/aldehyde ratio for vanillyl phenols",
+        "titles" : "SE_Root acid/aldehyde ratio for vanillyl phenols",
+        "datatype" : "string"
+      }, {
+        "name" : "Root C/N ratio",
+        "titles" : "Root C/N ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root C/N ratio",
+        "titles" : "n_Root C/N ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root C/N ratio",
+        "titles" : "SE_Root C/N ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root C/N ratio",
+        "titles" : "SD_Root C/N ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Root cinnamyl phenol/vanillyl phenol ratio",
+        "titles" : "Root cinnamyl phenol/vanillyl phenol ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root cinnamyl phenol/vanillyl phenol ratio",
+        "titles" : "SE_Root cinnamyl phenol/vanillyl phenol ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Root lignin/N ratio",
+        "titles" : "Root lignin/N ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root lignin/N ratio",
+        "titles" : "n_Root lignin/N ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root lignin/N ratio",
+        "titles" : "SE_Root lignin/N ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Root NAH/root N ratio",
+        "titles" : "Root NAH/root N ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root NAH/root N ratio",
+        "titles" : "n_Root NAH/root N ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root NAH/root N ratio",
+        "titles" : "SE_Root NAH/root N ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root NAH/root N ratio",
+        "titles" : "SD_Root NAH/root N ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Root organic N/root total N ratio",
+        "titles" : "Root organic N/root total N ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Root polyphenol/root N ratio",
+        "titles" : "Root polyphenol/root N ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Root syringyl/vanillyl phenol ratio",
+        "titles" : "Root syringyl/vanillyl phenol ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root syringyl/vanillyl phenol ratio",
+        "titles" : "SE_Root syringyl/vanillyl phenol ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Root vanillyl phenol/lignin phenol ratio",
+        "titles" : "Root vanillyl phenol/lignin phenol ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "SE _Root vanillyl phenol/lignin phenol ratio",
+        "titles" : "SE _Root vanillyl phenol/lignin phenol ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Root non-structural C content per root C content",
+        "titles" : "Root non-structural C content per root C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root total non-structural carbohydrate content (TNC)",
+        "titles" : "Root total non-structural carbohydrate content (TNC)",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root total non-structural carbohydrate content (TNC)",
+        "titles" : "n_Root total non-structural carbohydrate content (TNC)",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root total non-structural carbohydrate content (TNC)",
+        "titles" : "SE_Root total non-structural carbohydrate content (TNC)",
+        "datatype" : "string"
+      }, {
+        "name" : "Root decomposition_Annual k constant",
+        "titles" : "Root decomposition_Annual k constant",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root decomposition_Annual k constant",
+        "titles" : "SE_Root decomposition_Annual k constant",
+        "datatype" : "string"
+      }, {
+        "name" : "Root decomposition_Annual N immobilized in decomposing roots",
+        "titles" : "Root decomposition_Annual N immobilized in decomposing roots",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root decomposition_Annual N immobilized in decomposing roots",
+        "titles" : "n_Root decomposition_Annual N immobilized in decomposing roots",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root decomposition_Annual N immobilized in decomposing roots",
+        "titles" : "SE_Root decomposition_Annual N immobilized in decomposing roots",
+        "datatype" : "string"
+      }, {
+        "name" : "Root decomposition_Annual necromass decomposition rate per ground area",
+        "titles" : "Root decomposition_Annual necromass decomposition rate per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root decomposition_Estimated cumulative monthly mass loss",
+        "titles" : "Root decomposition_Estimated cumulative monthly mass loss",
+        "datatype" : "string"
+      }, {
+        "name" : "Root decomposition_Fraction C remaining",
+        "titles" : "Root decomposition_Fraction C remaining",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root decomposition_Fraction C remaining",
+        "titles" : "SE_Root decomposition_Fraction C remaining",
+        "datatype" : "string"
+      }, {
+        "name" : "Root decomposition_Fraction mass remaining",
+        "titles" : "Root decomposition_Fraction mass remaining",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root decomposition_Fraction mass remaining",
+        "titles" : "n_Root decomposition_Fraction mass remaining",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root decomposition_Fraction mass remaining",
+        "titles" : "SE_Root decomposition_Fraction mass remaining",
+        "datatype" : "string"
+      }, {
+        "name" : "Root decomposition_Fraction N remaining",
+        "titles" : "Root decomposition_Fraction N remaining",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root decomposition_Fraction N remaining",
+        "titles" : "n_Root decomposition_Fraction N remaining",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root decomposition_Fraction N remaining",
+        "titles" : "SE_Root decomposition_Fraction N remaining",
+        "datatype" : "string"
+      }, {
+        "name" : "Root decomposition_Monthly k constant",
+        "titles" : "Root decomposition_Monthly k constant",
+        "datatype" : "string"
+      }, {
+        "name" : "Root decomposition_Monthly necromass decomposition rate per ground area",
+        "titles" : "Root decomposition_Monthly necromass decomposition rate per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root decomposition duration_d",
+        "titles" : "Root decomposition duration_d",
+        "datatype" : "string"
+      }, {
+        "name" : "Root decomposition duration_mo",
+        "titles" : "Root decomposition duration_mo",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Root decomposition_Litterbag mesh size",
+        "titles" : "Notes_Root decomposition_Litterbag mesh size",
+        "datatype" : "string"
+      }, {
+        "name" : "Root age survivorship fraction",
+        "titles" : "Root age survivorship fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root age survivorship fraction",
+        "titles" : "SE_Root age survivorship fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "95 percent confidence margin_Root age survivorship fraction",
+        "titles" : "95 percent confidence margin_Root age survivorship fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mean lifespan_d",
+        "titles" : "Root mean lifespan_d",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mean lifespan_Main_d",
+        "titles" : "Root mean lifespan_Main_d",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mean lifespan_yr",
+        "titles" : "Root mean lifespan_yr",
+        "datatype" : "string"
+      }, {
+        "name" : "Root median lifespan_d",
+        "titles" : "Root median lifespan_d",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root mean lifespan_d",
+        "titles" : "n_Root mean lifespan_d",
+        "datatype" : "string"
+      }, {
+        "name" : "5th percentile_Root mean lifespan_d",
+        "titles" : "5th percentile_Root mean lifespan_d",
+        "datatype" : "string"
+      }, {
+        "name" : "95th percentile_Root mean lifespan_d",
+        "titles" : "95th percentile_Root mean lifespan_d",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root mean lifespan_d",
+        "titles" : "SE_Root mean lifespan_d",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root median lifespan_d",
+        "titles" : "SE_Root median lifespan_d",
+        "datatype" : "string"
+      }, {
+        "name" : "Root median lifespan_Main_d",
+        "titles" : "Root median lifespan_Main_d",
+        "datatype" : "string"
+      }, {
+        "name" : "Root median lifespan_yr",
+        "titles" : "Root median lifespan_yr",
+        "datatype" : "string"
+      }, {
+        "name" : "Root survivorship_Fraction of root tips surviving after one year",
+        "titles" : "Root survivorship_Fraction of root tips surviving after one year",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root survivorship_Fraction of root tips surviving after one year",
+        "titles" : "n_Root survivorship_Fraction of root tips surviving after one year",
+        "datatype" : "string"
+      }, {
+        "name" : "Root survivorship_Fraction roots surviving for exposition period",
+        "titles" : "Root survivorship_Fraction roots surviving for exposition period",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root survivorship_Fraction roots surviving for exposition period",
+        "titles" : "n_Root survivorship_Fraction roots surviving for exposition period",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root survivorship_Fraction roots surviving for exposition period",
+        "titles" : "SE_Root survivorship_Fraction roots surviving for exposition period",
+        "datatype" : "string"
+      }, {
+        "name" : "Root survivorship_Fraction roots surviving for growing season",
+        "titles" : "Root survivorship_Fraction roots surviving for growing season",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Annual C production per ground area",
+        "titles" : "Root growth_Annual C production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root growth_Annual C production per ground area",
+        "titles" : "n_Root growth_Annual C production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Annual C production per ground area",
+        "titles" : "SE_Root growth_Annual C production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Annual length production per ground area",
+        "titles" : "Root growth_Annual length production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root growth_Annual length production per ground area",
+        "titles" : "n_Root growth_Annual length production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Annual length production per ground area",
+        "titles" : "SE_Root growth_Annual length production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "5th percentile_Root growth_Annual length production per ground area",
+        "titles" : "5th percentile_Root growth_Annual length production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "95th percentile_Root growth_Annual length production per ground area",
+        "titles" : "95th percentile_Root growth_Annual length production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Annual length production per minirhizotron surface area",
+        "titles" : "Root growth_Annual length production per minirhizotron surface area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Annual length production per minirhizotron surface area",
+        "titles" : "SE_Root growth_Annual length production per minirhizotron surface area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Annual mass production per ground area",
+        "titles" : "Root growth_Annual mass production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root growth_Annual mass production per ground area",
+        "titles" : "n_Root growth_Annual mass production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Annual mass production per ground area",
+        "titles" : "SE_Root growth_Annual mass production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "5th percentile_Root growth_Annual mass production per ground area",
+        "titles" : "5th percentile_Root growth_Annual mass production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "95th percentile_Root growth_Annual mass production per ground area",
+        "titles" : "95th percentile_Root growth_Annual mass production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Annual net new length production per ground area",
+        "titles" : "Root growth_Annual net new length production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root growth_Annual net new length production per ground area",
+        "titles" : "n_Root growth_Annual net new length production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Annual surface area production per ground area",
+        "titles" : "Root growth_Annual surface area production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "5th percentile_Root growth_Annual surface area production per ground area",
+        "titles" : "5th percentile_Root growth_Annual surface area production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "95th percentile_Root growth_Annual surface area production per ground area",
+        "titles" : "95th percentile_Root growth_Annual surface area production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Annual surface area production per ground area",
+        "titles" : "SE_Root growth_Annual surface area production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Bimonthly number of roots born per ingrowth screen area",
+        "titles" : "Root growth_Bimonthly number of roots born per ingrowth screen area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Bimonthly number of roots born per ingrowth screen area",
+        "titles" : "SE_Root growth_Bimonthly number of roots born per ingrowth screen area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Cumulative length production per ground area",
+        "titles" : "Root growth_Cumulative length production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root growth_Cumulative length production per ground area",
+        "titles" : "n_Root growth_Cumulative length production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Cumulative length production per ground area",
+        "titles" : "SE_Root growth_Cumulative length production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Cumulative mass production per ground area",
+        "titles" : "Root growth_Cumulative mass production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Cumulative mass production per ground area",
+        "titles" : "SE_Root growth_Cumulative mass production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Cumulative monthly mass ingrowth per screen area",
+        "titles" : "Root growth_Cumulative monthly mass ingrowth per screen area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Cumulative net length production per ground area",
+        "titles" : "Root growth_Cumulative net length production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root growth_Cumulative net length production per ground area",
+        "titles" : "n_Root growth_Cumulative net length production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Cumulative net length production per ground area",
+        "titles" : "SE_Root growth_Cumulative net length production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Daily elongation rate",
+        "titles" : "Root growth_Daily elongation rate",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Daily elongation rate",
+        "titles" : "SE_Root growth_Daily elongation rate",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Daily length production per coarse root length",
+        "titles" : "Root growth_Daily length production per coarse root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Daily length production per minirhizotron surface area",
+        "titles" : "Root growth_Daily length production per minirhizotron surface area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Daily length production per minirhizotron surface area",
+        "titles" : "SE_Root growth_Daily length production per minirhizotron surface area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Daily mass production per coarse root length",
+        "titles" : "Root growth_Daily mass production per coarse root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Daily mass production per ground area",
+        "titles" : "Root growth_Daily mass production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root growth_Daily mass production per ground area",
+        "titles" : "n_Root growth_Daily mass production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Daily mass production per ground area",
+        "titles" : "SE_Root growth_Daily mass production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root growth_Daily mass production per ground area",
+        "titles" : "SD_Root growth_Daily mass production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Elongation fraction",
+        "titles" : "Root growth_Elongation fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Fraction peak production",
+        "titles" : "Root growth_Fraction peak production",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Fraction peak production",
+        "titles" : "SE_Root growth_Fraction peak production",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Length produced per P content",
+        "titles" : "Root growth_Length produced per P content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root growth_Length produced per P content",
+        "titles" : "n_Root growth_Length produced per P content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Length produced per P content",
+        "titles" : "SE_Root growth_Length produced per P content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Length production per ground area and exposition period",
+        "titles" : "Root growth_Length production per ground area and exposition period",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root growth_Length production per ground area and exposition period",
+        "titles" : "n_Root growth_Length production per ground area and exposition period",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Length production per ground area and exposition period",
+        "titles" : "SE_Root growth_Length production per ground area and exposition period",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Length production per minirhizotron frame",
+        "titles" : "Root growth_Length production per minirhizotron frame",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Length production per minirhizotron frame",
+        "titles" : "SE_Root growth_Length production per minirhizotron frame",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Length recovery from pruning",
+        "titles" : "Root growth_Length recovery from pruning",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Length recovery from pruning",
+        "titles" : "SE_Root growth_Length recovery from pruning",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Mass production per ground area and exposition period",
+        "titles" : "Root growth_Mass production per ground area and exposition period",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root growth_Mass production per ground area and exposition period",
+        "titles" : "n_Root growth_Mass production per ground area and exposition period",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Mass production per ground area and exposition period",
+        "titles" : "SE_Root growth_Mass production per ground area and exposition period",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Mass production per plant per growing season",
+        "titles" : "Root growth_Mass production per plant per growing season",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Monthly mass ingrowth per screen area",
+        "titles" : "Root growth_Monthly mass ingrowth per screen area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Monthly mass production per ground area",
+        "titles" : "Root growth_Monthly mass production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Monthly mass production per soil volume",
+        "titles" : "Root growth_Monthly mass production per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root growth_Monthly mass production per soil volume",
+        "titles" : "n_Root growth_Monthly mass production per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Monthly mass production per soil volume",
+        "titles" : "SE_Root growth_Monthly mass production per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Number of roots per area of ingrowth screen",
+        "titles" : "Root growth_Number of roots per area of ingrowth screen",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Number of roots per area of ingrowth screen",
+        "titles" : "SE_Root growth_Number of roots per area of ingrowth screen",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Predicted amplitude of monthly net root production",
+        "titles" : "Root growth_Predicted amplitude of monthly net root production",
+        "datatype" : "string"
+      }, {
+        "name" : "Median_Root growth_Probability monthly net root production greater than 0",
+        "titles" : "Median_Root growth_Probability monthly net root production greater than 0",
+        "datatype" : "string"
+      }, {
+        "name" : "Upper quartile_Root growth_Probability monthly net root production greater than 0",
+        "titles" : "Upper quartile_Root growth_Probability monthly net root production greater than 0",
+        "datatype" : "string"
+      }, {
+        "name" : "Lower quartile_Root growth_Probability monthly net root production greater than 0",
+        "titles" : "Lower quartile_Root growth_Probability monthly net root production greater than 0",
+        "datatype" : "string"
+      }, {
+        "name" : "95 percent confidence interval_Root growth_Probability monthly net root production greater than 0",
+        "titles" : "95 percent confidence interval_Root growth_Probability monthly net root production greater than 0",
+        "datatype" : "string"
+      }, {
+        "name" : "Root growth_Surface area production per ground area and exposition period",
+        "titles" : "Root growth_Surface area production per ground area and exposition period",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root growth_Surface area production per ground area and exposition period",
+        "titles" : "n_Root growth_Surface area production per ground area and exposition period",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root growth_Surface area production per ground area and exposition period",
+        "titles" : "SE_Root growth_Surface area production per ground area and exposition period",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Ingrowth duration_d",
+        "titles" : "Notes_Ingrowth duration_d",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Ingrowth duration_mo",
+        "titles" : "Notes_Ingrowth duration_mo",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Production duration_d",
+        "titles" : "Notes_Production duration_d",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Production duration_mo",
+        "titles" : "Notes_Production duration_mo",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Root dynamics calculation method",
+        "titles" : "Notes_Root dynamics calculation method",
+        "datatype" : "string"
+      }, {
+        "name" : "Root pruning recovery",
+        "titles" : "Root pruning recovery",
+        "datatype" : "string"
+      }, {
+        "name" : "Root relative growth rate (RGR)_Root length",
+        "titles" : "Root relative growth rate (RGR)_Root length",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root relative growth rate (RGR)_Root length",
+        "titles" : "SE_Root relative growth rate (RGR)_Root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Median_Root relative growth rate (RGR)_Root length",
+        "titles" : "Median_Root relative growth rate (RGR)_Root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Root relative growth rate (RGR)_Root length",
+        "titles" : "Max_Root relative growth rate (RGR)_Root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Upper quartile_Root relative growth rate (RGR)_Root length",
+        "titles" : "Upper quartile_Root relative growth rate (RGR)_Root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Lower quartile_Root relative growth rate (RGR)_Root length",
+        "titles" : "Lower quartile_Root relative growth rate (RGR)_Root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Root relative growth rate (RGR)_Root length",
+        "titles" : "Min_Root relative growth rate (RGR)_Root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mortality_Annual root length mortality per ground area",
+        "titles" : "Root mortality_Annual root length mortality per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root mortality_Annual root length mortality per ground area",
+        "titles" : "n_Root mortality_Annual root length mortality per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root mortality_Annual root length mortality per ground area",
+        "titles" : "SE_Root mortality_Annual root length mortality per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mortality_Annual root length mortality per minirhizotron surface area",
+        "titles" : "Root mortality_Annual root length mortality per minirhizotron surface area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root mortality_Annual root length mortality per minirhizotron surface area",
+        "titles" : "SE_Root mortality_Annual root length mortality per minirhizotron surface area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mortality_Annual root mass mortality per ground area",
+        "titles" : "Root mortality_Annual root mass mortality per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root mortality_Annual root mass mortality per ground area",
+        "titles" : "n_Root mortality_Annual root mass mortality per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root mortality_Annual root mass mortality per ground area",
+        "titles" : "SE_Root mortality_Annual root mass mortality per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mortality_Cumulative root length disappearance per ground area",
+        "titles" : "Root mortality_Cumulative root length disappearance per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root mortality_Cumulative root length disappearance per ground area",
+        "titles" : "n_Root mortality_Cumulative root length disappearance per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root mortality_Cumulative root length disappearance per ground area",
+        "titles" : "SE_Root mortality_Cumulative root length disappearance per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mortality_Cumulative root length mortality per minirhizotron frame",
+        "titles" : "Root mortality_Cumulative root length mortality per minirhizotron frame",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root mortality_Cumulative root length mortality per minirhizotron frame",
+        "titles" : "SE_Root mortality_Cumulative root length mortality per minirhizotron frame",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mortality_Daily root length mortality per minirhizotron surface area",
+        "titles" : "Root mortality_Daily root length mortality per minirhizotron surface area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root mortality_Daily root length mortality per minirhizotron surface area",
+        "titles" : "SE_Root mortality_Daily root length mortality per minirhizotron surface area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mortality_Fraction initial intersections with ingrowth screen lost",
+        "titles" : "Root mortality_Fraction initial intersections with ingrowth screen lost",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root mortality_Fraction initial intersections with ingrowth screen lost",
+        "titles" : "SE_Root mortality_Fraction initial intersections with ingrowth screen lost",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mortality_Monthly mass disappearance per soil volume",
+        "titles" : "Root mortality_Monthly mass disappearance per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mortality_Monthly necromass increase per soil volume",
+        "titles" : "Root mortality_Monthly necromass increase per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mortality_Monthly number of roots lost per ingrowth screen area",
+        "titles" : "Root mortality_Monthly number of roots lost per ingrowth screen area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root mortality_Monthly number of roots lost per ingrowth screen area",
+        "titles" : "SE_Root mortality_Monthly number of roots lost per ingrowth screen area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mortality_Root N loss per annual plant N uptake",
+        "titles" : "Root mortality_Root N loss per annual plant N uptake",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mortality_Root N loss per plant N content per ground area",
+        "titles" : "Root mortality_Root N loss per plant N content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root mortality_Root N loss per plant N content per ground area",
+        "titles" : "SE_Root mortality_Root N loss per plant N content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root turnover_Annual biomass turnover per ground area",
+        "titles" : "Root turnover_Annual biomass turnover per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root turnover_Estimated rate per growing season",
+        "titles" : "Root turnover_Estimated rate per growing season",
+        "datatype" : "string"
+      }, {
+        "name" : "Root turnover_Mass per dry season",
+        "titles" : "Root turnover_Mass per dry season",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root turnover_Mass per dry season",
+        "titles" : "SE_Root turnover_Mass per dry season",
+        "datatype" : "string"
+      }, {
+        "name" : "Root turnover_Mass per wet season",
+        "titles" : "Root turnover_Mass per wet season",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root turnover_Mass per wet season",
+        "titles" : "SE_Root turnover_Mass per wet season",
+        "datatype" : "string"
+      }, {
+        "name" : "Root turnover_Annual root system replacement",
+        "titles" : "Root turnover_Annual root system replacement",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root turnover_Annual root system replacement",
+        "titles" : "n_Root turnover_Annual root system replacement",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root turnover_Annual root system replacement",
+        "titles" : "SE_Root turnover_Annual root system replacement",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root turnover_Annual biomass turnover per ground area",
+        "titles" : "SD_Root turnover_Annual biomass turnover per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Median_Root turnover_Annual root system replacement",
+        "titles" : "Median_Root turnover_Annual root system replacement",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Root turnover_Annual root system replacement",
+        "titles" : "Max_Root turnover_Annual root system replacement",
+        "datatype" : "string"
+      }, {
+        "name" : "Upper quartile_Root turnover_Annual root system replacement",
+        "titles" : "Upper quartile_Root turnover_Annual root system replacement",
+        "datatype" : "string"
+      }, {
+        "name" : "Lower quartile_Root turnover_Annual root system replacement",
+        "titles" : "Lower quartile_Root turnover_Annual root system replacement",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Root turnover_Annual root system replacement",
+        "titles" : "Min_Root turnover_Annual root system replacement",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Root turnover formula",
+        "titles" : "Notes_Root turnover formula",
+        "datatype" : "string"
+      }, {
+        "name" : "Mycorrhiza_Fraction contact exploration mycorrhizae",
+        "titles" : "Mycorrhiza_Fraction contact exploration mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Mycorrhiza_Fraction contact exploration mycorrhizae",
+        "titles" : "SE_Mycorrhiza_Fraction contact exploration mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "Mycorrhiza_Fraction long-distance exploration mycorrhizae",
+        "titles" : "Mycorrhiza_Fraction long-distance exploration mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Mycorrhiza_Fraction long-distance exploration mycorrhizae",
+        "titles" : "SE_Mycorrhiza_Fraction long-distance exploration mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "Mycorrhiza_Fraction medium-distance exploration mycorrhizae",
+        "titles" : "Mycorrhiza_Fraction medium-distance exploration mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "Mycorrhiza_Fraction mycorrhizal root tips that are living",
+        "titles" : "Mycorrhiza_Fraction mycorrhizal root tips that are living",
+        "datatype" : "string"
+      }, {
+        "name" : "Mycorrhiza_Fraction of root length",
+        "titles" : "Mycorrhiza_Fraction of root length",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Mycorrhiza_Fraction of root length",
+        "titles" : "n_Mycorrhiza_Fraction of root length",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Mycorrhiza_Fraction of root length",
+        "titles" : "SE_Mycorrhiza_Fraction of root length",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Mycorrhiza_Fraction of root length",
+        "titles" : "SD_Mycorrhiza_Fraction of root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Mycorrhiza_Fraction root length colonized by AM mycorrhizae",
+        "titles" : "Mycorrhiza_Fraction root length colonized by AM mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Mycorrhiza_Fraction root length colonized by AM mycorrhizae",
+        "titles" : "n_Mycorrhiza_Fraction root length colonized by AM mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Mycorrhiza_Fraction root length colonized by AM mycorrhizae",
+        "titles" : "SE_Mycorrhiza_Fraction root length colonized by AM mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Mycorrhiza_Fraction root length colonized by AM mycorrhizae",
+        "titles" : "SD_Mycorrhiza_Fraction root length colonized by AM mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "Median_Mycorrhiza_Fraction root length colonized by AM mycorrhizae",
+        "titles" : "Median_Mycorrhiza_Fraction root length colonized by AM mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "Upper quartile_Mycorrhiza_Fraction root length colonized by AM mycorrhizae",
+        "titles" : "Upper quartile_Mycorrhiza_Fraction root length colonized by AM mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "Lower quartile_Mycorrhiza_Fraction root length colonized by AM mycorrhizae",
+        "titles" : "Lower quartile_Mycorrhiza_Fraction root length colonized by AM mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "Mycorrhiza_Fraction root length colonized by EM mycorrhizae",
+        "titles" : "Mycorrhiza_Fraction root length colonized by EM mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Mycorrhiza_Fraction root length colonized by EM mycorrhizae",
+        "titles" : "SE_Mycorrhiza_Fraction root length colonized by EM mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "Mycorrhiza_Fraction root tips colonized by mycorrhizae",
+        "titles" : "Mycorrhiza_Fraction root tips colonized by mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Mycorrhiza_Fraction root tips colonized by mycorrhizae",
+        "titles" : "n_Mycorrhiza_Fraction root tips colonized by mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Mycorrhiza_Fraction root tips colonized by mycorrhizae",
+        "titles" : "SE_Mycorrhiza_Fraction root tips colonized by mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "Mycorrhiza_Fraction short-distance exploration mycorrhizae",
+        "titles" : "Mycorrhiza_Fraction short-distance exploration mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Mycorrhiza_Fraction short-distance exploration mycorrhizae",
+        "titles" : "SE_Mycorrhiza_Fraction short-distance exploration mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "Mycorrhiza_Length of AM hyphae per soil mass",
+        "titles" : "Mycorrhiza_Length of AM hyphae per soil mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Mycorrhiza_Number of AM spores per soil mass",
+        "titles" : "Mycorrhiza_Number of AM spores per soil mass",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Mycorrhiza_Number of AM spores per soil mass",
+        "titles" : "n_Mycorrhiza_Number of AM spores per soil mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Mycorrhiza_Number of AM spores per soil mass",
+        "titles" : "SE_Mycorrhiza_Number of AM spores per soil mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Mycorrhiza_Number of AM spores per soil mass",
+        "titles" : "SD_Mycorrhiza_Number of AM spores per soil mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Mycorrhiza_Number of root tips per root length colonized by mycorrhizae",
+        "titles" : "Mycorrhiza_Number of root tips per root length colonized by mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Mycorrhiza_Number of root tips per root length colonized by mycorrhizae",
+        "titles" : "n_Mycorrhiza_Number of root tips per root length colonized by mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Mycorrhiza_Number of root tips per root length colonized by mycorrhizae",
+        "titles" : "SE_Mycorrhiza_Number of root tips per root length colonized by mycorrhizae",
+        "datatype" : "string"
+      }, {
+        "name" : "Mycorrhiza_PLFA proxy for EM mass per ground area",
+        "titles" : "Mycorrhiza_PLFA proxy for EM mass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Mycorrhiza_PLFA proxy for EM mass per ground area",
+        "titles" : "SE_Mycorrhiza_PLFA proxy for EM mass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Mycorrhiza_PLFA proxy for mycorrhizal hyphal C per soil mass",
+        "titles" : "Mycorrhiza_PLFA proxy for mycorrhizal hyphal C per soil mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Mycorrhiza_PLFA proxy for mycorrhizal hyphal C per soil mass",
+        "titles" : "SE_Mycorrhiza_PLFA proxy for mycorrhizal hyphal C per soil mass",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonId",
+        "titles" : "Mycorrhiza_Type_Data source",
+        "datatype" : {
+           "type": "string",
+           "valueUrl": "FRED:Mycorrhiza:{targetTaxonId}"
+        } 
+      }, {
+        "name" : "Mycorrhiza_Visual estimate of root colonization intensity",
+        "titles" : "Mycorrhiza_Visual estimate of root colonization intensity",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Mycorrhiza_Visual estimate of root colonization intensity",
+        "titles" : "SE_Mycorrhiza_Visual estimate of root colonization intensity",
+        "datatype" : "string"
+      }, {
+        "name" : "Root nodules_Nodule mass on dead roots per ground area",
+        "titles" : "Root nodules_Nodule mass on dead roots per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root nodules_Nodule mass on dead roots per ground area",
+        "titles" : "SE_Root nodules_Nodule mass on dead roots per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root nodules_Nodule mass on living roots per ground area",
+        "titles" : "Root nodules_Nodule mass on living roots per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root nodules_Nodule mass on living roots per ground area",
+        "titles" : "SE_Root nodules_Nodule mass on living roots per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Mycoheterotrophy",
+        "titles" : "Mycoheterotrophy",
+        "datatype" : "string"
+      }, {
+        "name" : "Root microbes_Bacterial biomass C content per root mass",
+        "titles" : "Root microbes_Bacterial biomass C content per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root microbes_Fungal biomass C content per root mass",
+        "titles" : "Root microbes_Fungal biomass C content per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root microbes_Fungal C/bacterial C ratio",
+        "titles" : "Root microbes_Fungal C/bacterial C ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Root microbes_Microbial biomass C content per root mass",
+        "titles" : "Root microbes_Microbial biomass C content per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root microbes_Microbial biomass N content per root mass",
+        "titles" : "Root microbes_Microbial biomass N content per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root microbes_Root glucosamine content per root mass",
+        "titles" : "Root microbes_Root glucosamine content per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root microbes_Root length hyphal fraction",
+        "titles" : "Root microbes_Root length hyphal fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root microbes_Root length hyphal fraction",
+        "titles" : "SE_Root microbes_Root length hyphal fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Root muramic acid content",
+        "titles" : "Root muramic acid content",
+        "datatype" : "string"
+      }, {
+        "name" : "Root cross-sectional area",
+        "titles" : "Root cross-sectional area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_root cross-sectional area",
+        "titles" : "n_root cross-sectional area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root cross-sectional area",
+        "titles" : "SE_Root cross-sectional area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root diameter",
+        "titles" : "Root diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root diameter",
+        "titles" : "n_Root diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root diameter",
+        "titles" : "SE_Root diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root diameter",
+        "titles" : "SD_Root diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Root diameter",
+        "titles" : "Min_Root diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Root diameter",
+        "titles" : "Max_Root diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "Median_Root diameter",
+        "titles" : "Median_Root diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "Upper quartile_Root diameter",
+        "titles" : "Upper quartile_Root diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "Lower quartile_Root diameter",
+        "titles" : "Lower quartile_Root diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "Modal_Root diameter",
+        "titles" : "Modal_Root diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "Root dry matter content (RDMC)",
+        "titles" : "Root dry matter content (RDMC)",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root dry matter content (RDMC)",
+        "titles" : "n_Root dry matter content (RDMC)",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root dry matter content (RDMC)",
+        "titles" : "SE_Root dry matter content (RDMC)",
+        "datatype" : "string"
+      }, {
+        "name" : "Root color_White or brown",
+        "titles" : "Root color_White or brown",
+        "datatype" : "string"
+      }, {
+        "name" : "Root hair density",
+        "titles" : "Root hair density",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root hair density",
+        "titles" : "n_Root hair density",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root hair density",
+        "titles" : "SE_Root hair density",
+        "datatype" : "string"
+      }, {
+        "name" : "Root hair diameter",
+        "titles" : "Root hair diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root hair diameter",
+        "titles" : "n_Root hair diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root hair diameter",
+        "titles" : "SE_Root hair diameter",
+        "datatype" : "string"
+      }, {
+        "name" : "Root hair incidence",
+        "titles" : "Root hair incidence",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root hair incidence",
+        "titles" : "n_Root hair incidence",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root hair incidence",
+        "titles" : "SE_Root hair incidence",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root hair incidence",
+        "titles" : "SD_Root hair incidence",
+        "datatype" : "string"
+      }, {
+        "name" : "Root hair length",
+        "titles" : "Root hair length",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root hair length",
+        "titles" : "n_Root hair length",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root hair length",
+        "titles" : "SE_Root hair length",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root hair length",
+        "titles" : "SD_Root hair length",
+        "datatype" : "string"
+      }, {
+        "name" : "Root hair volume per root mass",
+        "titles" : "Root hair volume per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root hair volume per root mass",
+        "titles" : "n_Root hair volume per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root hair volume per root mass",
+        "titles" : "SE_Root hair volume per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root length from base to tip",
+        "titles" : "Root length from base to tip",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root length from base to tip",
+        "titles" : "n_Root length from base to tip",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root length from base to tip",
+        "titles" : "SE_Root length from base to tip",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root length from base to tip",
+        "titles" : "SD_Root length from base to tip",
+        "datatype" : "string"
+      }, {
+        "name" : "95 percent confidence interval min_Root length from base to tip",
+        "titles" : "95 percent confidence interval min_Root length from base to tip",
+        "datatype" : "string"
+      }, {
+        "name" : "95 percent confidence interval max_Root length from base to tip",
+        "titles" : "95 percent confidence interval max_Root length from base to tip",
+        "datatype" : "string"
+      }, {
+        "name" : "Root tissue density (RTD)",
+        "titles" : "Root tissue density (RTD)",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root tissue density (RTD)",
+        "titles" : "n_Root tissue density (RTD)",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root tissue density (RTD)",
+        "titles" : "SE_Root tissue density (RTD)",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root tissue density (RTD)",
+        "titles" : "SD_Root tissue density (RTD)",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Root tissue density (RTD)",
+        "titles" : "Min_Root tissue density (RTD)",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Root tissue density (RTD)",
+        "titles" : "Max_Root tissue density (RTD)",
+        "datatype" : "string"
+      }, {
+        "name" : "Median_Root tissue density (RTD)",
+        "titles" : "Median_Root tissue density (RTD)",
+        "datatype" : "string"
+      }, {
+        "name" : "Upper quartile_Root tissue density (RTD)",
+        "titles" : "Upper quartile_Root tissue density (RTD)",
+        "datatype" : "string"
+      }, {
+        "name" : "Lower quartile_Root tissue density (RTD)",
+        "titles" : "Lower quartile_Root tissue density (RTD)",
+        "datatype" : "string"
+      }, {
+        "name" : "Specific root area (SRA)",
+        "titles" : "Specific root area (SRA)",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Specific root area (SRA)",
+        "titles" : "n_Specific root area (SRA)",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Specific root area (SRA)",
+        "titles" : "SE_Specific root area (SRA)",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Specific root area (SRA)",
+        "titles" : "SD_Specific root area (SRA)",
+        "datatype" : "string"
+      }, {
+        "name" : "Median_Specific root area (SRA)",
+        "titles" : "Median_Specific root area (SRA)",
+        "datatype" : "string"
+      }, {
+        "name" : "Lower quartile_Specific root area (SRA)",
+        "titles" : "Lower quartile_Specific root area (SRA)",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Specific root area (SRA)",
+        "titles" : "Min_Specific root area (SRA)",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Specific root area (SRA)",
+        "titles" : "Max_Specific root area (SRA)",
+        "datatype" : "string"
+      }, {
+        "name" : "Upper quartile_Specific root area (SRA)",
+        "titles" : "Upper quartile_Specific root area (SRA)",
+        "datatype" : "string"
+      }, {
+        "name" : "Specific root length (SRL)",
+        "titles" : "Specific root length (SRL)",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Specific root length (SRL)",
+        "titles" : "n_Specific root length (SRL)",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Specific root length (SRL)",
+        "titles" : "SE_Specific root length (SRL)",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Specific root length (SRL)",
+        "titles" : "SD_Specific root length (SRL)",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Specific root length (SRL)",
+        "titles" : "Min_Specific root length (SRL)",
+        "datatype" : "string"
+      }, {
+        "name" : "Median_Specific root length (SRL)",
+        "titles" : "Median_Specific root length (SRL)",
+        "datatype" : "string"
+      }, {
+        "name" : "Upper quartile_Specific Root Length (SRL)",
+        "titles" : "Upper quartile_Specific Root Length (SRL)",
+        "datatype" : "string"
+      }, {
+        "name" : "Lower quartile_Specific root length (SRL)",
+        "titles" : "Lower quartile_Specific root length (SRL)",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Specific root length (SRL)",
+        "titles" : "Max_Specific root length (SRL)",
+        "datatype" : "string"
+      }, {
+        "name" : "Root exudation_C exudation rate per root mass",
+        "titles" : "Root exudation_C exudation rate per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root exudation_C exudation rate per root mass",
+        "titles" : "n_Root exudation_C exudation rate per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root exudation_C exudation rate per root mass",
+        "titles" : "SE_Root exudation_C exudation rate per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root exudation_C exudation rate per root length",
+        "titles" : "Root exudation_C exudation rate per root length",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root exudation_C exudation rate per root length",
+        "titles" : "SE_Root exudation_C exudation rate per root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Root exudation_C exudation rate per plant",
+        "titles" : "Root exudation_C exudation rate per plant",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root exudation_C exudation rate per plant",
+        "titles" : "SE_Root exudation_C exudation rate per plant",
+        "datatype" : "string"
+      }, {
+        "name" : "Root exudation_Fraction estimated root mass",
+        "titles" : "Root exudation_Fraction estimated root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root exudation_Fraction estimated root mass",
+        "titles" : "n_Root exudation_Fraction estimated root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root exudation_Fraction estimated root mass",
+        "titles" : "SE_Root exudation_Fraction estimated root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root exudation_molar C exudation rate per root area",
+        "titles" : "Root exudation_molar C exudation rate per root area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root exudation_Concentration in soil",
+        "titles" : "Root exudation_Concentration in soil",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root exudation_Concentration in soil",
+        "titles" : "SE_Root exudation_Concentration in soil",
+        "datatype" : "string"
+      }, {
+        "name" : "Root acid phosphatase activity per root mass",
+        "titles" : "Root acid phosphatase activity per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root acid phosphatase activity per root mass",
+        "titles" : "n_Root acid phosphatase activity per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root acid phosphatase activity per root mass",
+        "titles" : "SE_Root acid phosphatase activity per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Root acid phosphatase activity per root mass",
+        "titles" : "Max_Root acid phosphatase activity per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Upper quartile_Root acid phosphatase activity per root mass",
+        "titles" : "Upper quartile_Root acid phosphatase activity per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Median_Root acid phosphatase activity per root mass",
+        "titles" : "Median_Root acid phosphatase activity per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Lower quartile_Root acid phosphatase activity per root mass",
+        "titles" : "Lower quartile_Root acid phosphatase activity per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Root acid phosphatase activity per root mass",
+        "titles" : "Min_Root acid phosphatase activity per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root phosphatase activity per root length",
+        "titles" : "Root phosphatase activity per root length",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root phosphatase activity per root length",
+        "titles" : "n_Root phosphatase activity per root length",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root phosphatase activity per root length",
+        "titles" : "SE_Root phosphatase activity per root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Root phosphatase activity per root mass",
+        "titles" : "Root phosphatase activity per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root phosphatase activity per root mass",
+        "titles" : "n_Root phosphatase activity per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root phosphatase activity per root mass",
+        "titles" : "SE_Root phosphatase activity per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root preferred N form",
+        "titles" : "Root preferred N form",
+        "datatype" : "string"
+      }, {
+        "name" : "Root N_Annual turnover per ground area",
+        "titles" : "Root N_Annual turnover per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant N uptake_Daily uptake of molar total 15N per shoot dry mass",
+        "titles" : "Plant N uptake_Daily uptake of molar total 15N per shoot dry mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Plant N uptake_Daily uptake of molar total 15N per shoot dry mass",
+        "titles" : "SE_Plant N uptake_Daily uptake of molar total 15N per shoot dry mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant N uptake rate_Annual N uptake per ground area",
+        "titles" : "Plant N uptake rate_Annual N uptake per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Plant N uptake rate_Annual N uptake per ground area",
+        "titles" : "n_Plant N uptake rate_Annual N uptake per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Plant N uptake rate_Annual N uptake per ground area",
+        "titles" : "SE_Plant N uptake rate_Annual N uptake per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root N uptake_Cumulative N uptake",
+        "titles" : "Root N uptake_Cumulative N uptake",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root N uptake_Cumulative N uptake",
+        "titles" : "n_Root N uptake_Cumulative N uptake",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root N uptake_Cumulative N uptake",
+        "titles" : "SE_Root N uptake_Cumulative N uptake",
+        "datatype" : "string"
+      }, {
+        "name" : "Root N uptake_Molar organic N uptake per root area",
+        "titles" : "Root N uptake_Molar organic N uptake per root area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root N uptake_Hourly uptake per unit root mass",
+        "titles" : "Root N uptake_Hourly uptake per unit root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root N uptake_Hourly uptake per unit root mass",
+        "titles" : "n_Root N uptake_Hourly uptake per unit root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root N uptake_Hourly uptake per unit root mass",
+        "titles" : "SE_Root N uptake_Hourly uptake per unit root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root N uptake_Molar inorganic N uptak?e per root area",
+        "titles" : "Root N uptake_Molar inorganic N uptak?e per root area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root N uptake_Hourly uptake of 15NH4+ per root fresh mass",
+        "titles" : "Root N uptake_Hourly uptake of 15NH4+ per root fresh mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root N uptake_Hourly uptake of 15NH4+ per root fresh mass",
+        "titles" : "SD_Root N uptake_Hourly uptake of 15NH4+ per root fresh mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant N uptake_Daily uptake of molar 15NH4+ per shoot dry mass",
+        "titles" : "Plant N uptake_Daily uptake of molar 15NH4+ per shoot dry mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Plant N uptake_Daily uptake of molar 15NH4+ per shoot dry mass",
+        "titles" : "SE_Plant N uptake_Daily uptake of molar 15NH4+ per shoot dry mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root N uptake_Molar NH4+ uptake per root area",
+        "titles" : "Root N uptake_Molar NH4+ uptake per root area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root N uptake_Hourly uptake of molar NH4+ per root fresh mass",
+        "titles" : "Root N uptake_Hourly uptake of molar NH4+ per root fresh mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root N uptake_Hourly uptake of molar NH4+ per root fresh mass",
+        "titles" : "SD_Root N uptake_Hourly uptake of molar NH4+ per root fresh mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant N uptake_Daily uptake of molar 15NO3- per shoot dry mass",
+        "titles" : "Plant N uptake_Daily uptake of molar 15NO3- per shoot dry mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Plant N uptake_Daily uptake of molar 15NO3- per Shoot dry mass",
+        "titles" : "SE_Plant N uptake_Daily uptake of molar 15NO3- per Shoot dry mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root N uptake_Molar NO3- uptake per root area",
+        "titles" : "Root N uptake_Molar NO3- uptake per root area",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant N uptake_Daily uptake of molar 15N-Glycine per shoot dry mass",
+        "titles" : "Plant N uptake_Daily uptake of molar 15N-Glycine per shoot dry mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Plant N uptake_Daily uptake of molar 15N-Glycine per shoot dry mass",
+        "titles" : "SE_Plant N uptake_Daily uptake of molar 15N-Glycine per shoot dry mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root P uptake_Fraction maximum P uptake rate",
+        "titles" : "Root P uptake_Fraction maximum P uptake rate",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root P uptake_Fraction maximum P uptake rate",
+        "titles" : "n_Root P uptake_Fraction maximum P uptake rate",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root P uptake_Fraction maximum P uptake rate",
+        "titles" : "SE_Root P uptake_Fraction maximum P uptake rate",
+        "datatype" : "string"
+      }, {
+        "name" : "Root P uptake_Hourly uptake of H2PO4-",
+        "titles" : "Root P uptake_Hourly uptake of H2PO4-",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root P uptake_Hourly uptake of H2PO4-",
+        "titles" : "SD_Root P uptake_Hourly uptake of H2PO4-",
+        "datatype" : "string"
+      }, {
+        "name" : "Root P uptake_Rate per root mass",
+        "titles" : "Root P uptake_Rate per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root P uptake_Rate per root mass",
+        "titles" : "SE_Root P uptake_Rate per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root P uptake_Rate per root surface area per second",
+        "titles" : "Root P uptake_Rate per root surface area per second",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root P uptake_Rate per root surface area per second",
+        "titles" : "SE_Root P uptake_Rate per root surface area per second",
+        "datatype" : "string"
+      }, {
+        "name" : "Root K uptake_Fraction K uptake capacity per soil depth interval",
+        "titles" : "Root K uptake_Fraction K uptake capacity per soil depth interval",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Li uptake_Daily uptake of molar Li per root length",
+        "titles" : "Root Li uptake_Daily uptake of molar Li per root length",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root Li uptake_Daily uptake of molar Li per root length",
+        "titles" : "SE_Root Li uptake_Daily uptake of molar Li per root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Rb uptake_Hourly Rb uptake per root mass",
+        "titles" : "Root Rb uptake_Hourly Rb uptake per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root Rb uptake_Hourly Rb uptake per root mass",
+        "titles" : "SD_Root Rb uptake_Hourly Rb uptake per root mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root Rb uptake_Hourly uptake of molar Rb+ per root fresh mass",
+        "titles" : "Root Rb uptake_Hourly uptake of molar Rb+ per root fresh mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root Rb uptake_Hourly uptake of molar Rb+ per root fresh mass",
+        "titles" : "SE_Root Rb uptake_Hourly uptake of molar Rb+ per root fresh mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root Rb uptake_Hourly uptake of molar Rb+ per root fresh mass",
+        "titles" : "SD_Root Rb uptake_Hourly uptake of molar Rb+ per root fresh mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root respiration rate per root dry mass_CO2 release",
+        "titles" : "Root respiration rate per root dry mass_CO2 release",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root respiration rate per root dry mass_CO2 release",
+        "titles" : "n_Root respiration rate per root dry mass_CO2 release",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root respiration rate per root dry mass_CO2 release",
+        "titles" : "SE_Root respiration rate per root dry mass_CO2 release",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root respiration rate per root dry mass_CO2 release",
+        "titles" : "SD_Root respiration rate per root dry mass_CO2 release",
+        "datatype" : "string"
+      }, {
+        "name" : "Root respiration rate per root dry mass_O2 uptake",
+        "titles" : "Root respiration rate per root dry mass_O2 uptake",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root respiration rate per root dry mass_O2 uptake",
+        "titles" : "n_Root respiration rate per root dry mass_O2 uptake",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root respiration rate per root dry mass_O2 uptake",
+        "titles" : "SE_Root respiration rate per root dry mass_O2 uptake",
+        "datatype" : "string"
+      }, {
+        "name" : "Root respiration rate per root length_CO2 release",
+        "titles" : "Root respiration rate per root length_CO2 release",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root respiration rate per root length_CO2 release",
+        "titles" : "n_Root respiration rate per root length_CO2 release",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root respiration rate per root length_CO2 release",
+        "titles" : "SE_Root respiration rate per root length_CO2 release",
+        "datatype" : "string"
+      }, {
+        "name" : "Root respiration rate per root mass_C release",
+        "titles" : "Root respiration rate per root mass_C release",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root repiration rate per root mass_C release",
+        "titles" : "n_Root repiration rate per root mass_C release",
+        "datatype" : "string"
+      }, {
+        "name" : "Root water uptake per root length",
+        "titles" : "Root water uptake per root length",
+        "datatype" : "string"
+      }, {
+        "name" : "Root water uptake per root surface area",
+        "titles" : "Root water uptake per root surface area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root water uptake per root surface area",
+        "titles" : "n_Root water uptake per root surface area",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root water uptake per root surface area",
+        "titles" : "SD_Root water uptake per root surface area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root water uptake per root surface area",
+        "titles" : "SE_Root water uptake per root surface area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root water uptake_Hourly uptake rate per soil volume",
+        "titles" : "Root water uptake_Hourly uptake rate per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "Root water uptake_Hydraulic conductivity (Lp)",
+        "titles" : "Root water uptake_Hydraulic conductivity (Lp)",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root water uptake_Hydraulic conductivity (Lp)",
+        "titles" : "SE_Root water uptake_Hydraulic conductivity (Lp)",
+        "datatype" : "string"
+      }, {
+        "name" : "Belowground/aboveground mass ratio",
+        "titles" : "Belowground/aboveground mass ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Belowground/aboveground mass ratio",
+        "titles" : "n_Belowground/aboveground mass ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Belowground/aboveground mass ratio",
+        "titles" : "SE_Belowground/aboveground mass ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Aboveground/belowground net primary production ratio",
+        "titles" : "Aboveground/belowground net primary production ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Aboveground/belowground net primary production ratio",
+        "titles" : "SE_Aboveground/belowground net primary production ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Fine root C/leaf C ratio",
+        "titles" : "Fine root C/leaf C ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Fine root mass/leaf mass ratio",
+        "titles" : "Fine root mass/leaf mass ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mass fraction (RMF)",
+        "titles" : "Root mass fraction (RMF)",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root mass fraction (RMF)",
+        "titles" : "n_Root mass fraction (RMF)",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root mass fraction (RMF)",
+        "titles" : "SE_Root mass fraction (RMF)",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Root mass fraction (RMF)",
+        "titles" : "Min_Root mass fraction (RMF)",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Root mass fraction (RMF)",
+        "titles" : "Max_Root mass fraction (RMF)",
+        "datatype" : "string"
+      }, {
+        "name" : "Median_Root mass fraction (RMF)",
+        "titles" : "Median_Root mass fraction (RMF)",
+        "datatype" : "string"
+      }, {
+        "name" : "Upper quartile_Root mass fraction (RMF)",
+        "titles" : "Upper quartile_Root mass fraction (RMF)",
+        "datatype" : "string"
+      }, {
+        "name" : "Lower quartile_Root mass fraction (RMF)",
+        "titles" : "Lower quartile_Root mass fraction (RMF)",
+        "datatype" : "string"
+      }, {
+        "name" : "Root/shoot ratio",
+        "titles" : "Root/shoot ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root/shoot ratio",
+        "titles" : "n_Root/shoot ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root/shoot ratio",
+        "titles" : "SE_Root/shoot ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Root/shoot ratio",
+        "titles" : "Min_Root/shoot ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Root/shoot ratio",
+        "titles" : "Max_Root/shoot ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Median_Root/shoot ratio",
+        "titles" : "Median_Root/shoot ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Upper quartile_Root/shoot ratio",
+        "titles" : "Upper quartile_Root/shoot ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Lower quartile_Root/shoot ratio",
+        "titles" : "Lower quartile_Root/shoot ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Coarse root/fine root mass ratio",
+        "titles" : "Coarse root/fine root mass ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Root length fraction per root diameter class",
+        "titles" : "Root length fraction per root diameter class",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root length fraction per root diameter class",
+        "titles" : "n_Root length fraction per root diameter class",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root length fraction per root diameter class",
+        "titles" : "SE_Root length fraction per root diameter class",
+        "datatype" : "string"
+      }, {
+        "name" : "Root length fraction per root order class",
+        "titles" : "Root length fraction per root order class",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root length fraction per root order class",
+        "titles" : "n_Root length fraction per root order class",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root length fraction per root order class",
+        "titles" : "SE_Root length fraction per root order class",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mass fraction per root diameter class",
+        "titles" : "Root mass fraction per root diameter class",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root mass fraction per root diameter class",
+        "titles" : "SE_Root mass fraction per root diameter class",
+        "datatype" : "string"
+      }, {
+        "name" : "Median_Root mass fraction per root diameter class",
+        "titles" : "Median_Root mass fraction per root diameter class",
+        "datatype" : "string"
+      }, {
+        "name" : "Upper quartile_Root mass fraction per root diameter class",
+        "titles" : "Upper quartile_Root mass fraction per root diameter class",
+        "datatype" : "string"
+      }, {
+        "name" : "Lower quartile_Root mass fraction per root diameter class",
+        "titles" : "Lower quartile_Root mass fraction per root diameter class",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Root mass fraction per root diameter class",
+        "titles" : "Min_Root mass fraction per root diameter class",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Root mass fraction per root diameter class",
+        "titles" : "Max_Root mass fraction per root diameter class",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mass fraction per root order class",
+        "titles" : "Root mass fraction per root order class",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root mass fraction per root order class",
+        "titles" : "n_Root mass fraction per root order class",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root mass fraction per root order class",
+        "titles" : "SE_Root mass fraction per root order class",
+        "datatype" : "string"
+      }, {
+        "name" : "Root mass fraction per species",
+        "titles" : "Root mass fraction per species",
+        "datatype" : "string"
+      }, {
+        "name" : "Root necromass/biomass ratio",
+        "titles" : "Root necromass/biomass ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root necromass/biomass ratio",
+        "titles" : "SE_Root necromass/biomass ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Root surface area fraction per root order class",
+        "titles" : "Root surface area fraction per root order class",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root surface area fraction per root order class",
+        "titles" : "SE_Root surface area fraction per root order class",
+        "datatype" : "string"
+      }, {
+        "name" : "Root tip fraction per root diameter class",
+        "titles" : "Root tip fraction per root diameter class",
+        "datatype" : "string"
+      }, {
+        "name" : "Taproot mass fraction",
+        "titles" : "Taproot mass fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Taproot mass fraction",
+        "titles" : "n_Taproot mass fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Taproot mass fraction",
+        "titles" : "SE_Taproot mass fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Rooting depth",
+        "titles" : "Rooting depth",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Rooting depth",
+        "titles" : "SE_Rooting depth",
+        "datatype" : "string"
+      }, {
+        "name" : "Rooting depth_min",
+        "titles" : "Rooting depth_min",
+        "datatype" : "string"
+      }, {
+        "name" : "Rooting depth_Extrapolated 50 percent rooting depth",
+        "titles" : "Rooting depth_Extrapolated 50 percent rooting depth",
+        "datatype" : "string"
+      }, {
+        "name" : "Rooting depth_Extrapolated 95 percent rooting depth",
+        "titles" : "Rooting depth_Extrapolated 95 percent rooting depth",
+        "datatype" : "string"
+      }, {
+        "name" : "Rooting depth_Interpolated 50 percent rooting depth",
+        "titles" : "Rooting depth_Interpolated 50 percent rooting depth",
+        "datatype" : "string"
+      }, {
+        "name" : "Rooting depth_Interpolated 95 percent rooting depth",
+        "titles" : "Rooting depth_Interpolated 95 percent rooting depth",
+        "datatype" : "string"
+      }, {
+        "name" : "Rooting depth_Fraction roots in soil depth increment",
+        "titles" : "Rooting depth_Fraction roots in soil depth increment",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Rooting depth_Fraction roots in soil depth increment",
+        "titles" : "SD_Rooting depth_Fraction roots in soil depth increment",
+        "datatype" : "string"
+      }, {
+        "name" : "Rooting depth_Active",
+        "titles" : "Rooting depth_Active",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Rooting depth measurement",
+        "titles" : "Notes_Rooting depth measurement",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Sampled to maximum rooting depth (yes, no)",
+        "titles" : "Notes_Sampled to maximum rooting depth (yes, no)",
+        "datatype" : "string"
+      }, {
+        "name" : "Belowground biomass per ground area",
+        "titles" : "Belowground biomass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Belowground biomass per ground area",
+        "titles" : "n_Belowground biomass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Belowground biomass per ground area",
+        "titles" : "SE_Belowground biomass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Belowground biomass per ground area",
+        "titles" : "SD_Belowground biomass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Median_Belowground biomass per ground area",
+        "titles" : "Median_Belowground biomass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Upper quartile_Belowground biomass per ground area",
+        "titles" : "Upper quartile_Belowground biomass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Lower quartile_Belowground biomass per ground area",
+        "titles" : "Lower quartile_Belowground biomass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Belowground biomass per ground area",
+        "titles" : "Min_Belowground biomass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Belowground biomass per ground area",
+        "titles" : "Max_Belowground biomass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "5th percentile_Belowground biomass per ground area",
+        "titles" : "5th percentile_Belowground biomass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "95th percentile_Belowground biomass per ground area",
+        "titles" : "95th percentile_Belowground biomass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Belowground biomass per plant",
+        "titles" : "Belowground biomass per plant",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Belowground biomass per plant",
+        "titles" : "n_Belowground biomass per plant",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Belowground biomass per plant",
+        "titles" : "SE_Belowground biomass per plant",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Belowground biomass per plant",
+        "titles" : "Min_Belowground biomass per plant",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Belowground biomass per plant",
+        "titles" : "Max_Belowground biomass per plant",
+        "datatype" : "string"
+      }, {
+        "name" : "Belowground biomass per soil volume",
+        "titles" : "Belowground biomass per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Belowground biomass per soil volume",
+        "titles" : "n_Belowground biomass per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Belowground biomass per soil volume",
+        "titles" : "SE_Belowground biomass per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "Belowground necromass per ground area",
+        "titles" : "Belowground necromass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Belowground necromass per ground area",
+        "titles" : "n_Belowground necromass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Belowground necromass per ground area",
+        "titles" : "SE_Belowground necromass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Belowground necromass per ground area",
+        "titles" : "SD_Belowground necromass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root C content per ground area",
+        "titles" : "Root C content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root C content per ground area",
+        "titles" : "n_Root C content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root C content per ground area",
+        "titles" : "SE_Root C content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root C content per ground area",
+        "titles" : "SD_Root C content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Root annual C content per ground area",
+        "titles" : "Max_Root annual C content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Max_Root annual C content per ground area",
+        "titles" : "SE_Max_Root annual C content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Root annual C content per ground area",
+        "titles" : "Min_Root annual C content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Min_Root annual C content per ground area",
+        "titles" : "SE_Min_Root annual C content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root C content per soil mass",
+        "titles" : "Root C content per soil mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root C content per soil mass",
+        "titles" : "SE_Root C content per soil mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root intact branch length",
+        "titles" : "Root intact branch length",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root intact branch length",
+        "titles" : "n_Root intact branch length",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root intact branch length",
+        "titles" : "SE_Root intact branch length",
+        "datatype" : "string"
+      }, {
+        "name" : "Root length density (RLD)_Root length per ground area",
+        "titles" : "Root length density (RLD)_Root length per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root length density (RLD)_Root length per ground area",
+        "titles" : "n_Root length density (RLD)_Root length per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root length density (RLD)_Root length per ground area",
+        "titles" : "SE_Root length density (RLD)_Root length per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root length density (RLD)_Root length per ground area",
+        "titles" : "SD_Root length density (RLD)_Root length per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root length density (RLD)_Root length per soil volume",
+        "titles" : "Root length density (RLD)_Root length per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root length density (RLD)_Root length per soil volume",
+        "titles" : "n_Root length density (RLD)_Root length per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root length density (RLD)_Root length per soil volume",
+        "titles" : "SE_Root length density (RLD)_Root length per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Root length density (RLD)_Root length per soil volume",
+        "titles" : "SD_Root length density (RLD)_Root length per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "Median_Root length density (RLD)_Root length per soil volume",
+        "titles" : "Median_Root length density (RLD)_Root length per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Root length density (RLD)_Root length per soil volume",
+        "titles" : "Min_Root length density (RLD)_Root length per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Root length density (RLD)_Root length per soil volume",
+        "titles" : "Max_Root length density (RLD)_Root length per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "Upper quartile_Root length density (RLD)_Root length per soil volume",
+        "titles" : "Upper quartile_Root length density (RLD)_Root length per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "Lower quartile_Root length density (RLD)_Root length per soil volume",
+        "titles" : "Lower quartile_Root length density (RLD)_Root length per soil volume",
+        "datatype" : "string"
+      }, {
+        "name" : "Root length per minirhizotron frame",
+        "titles" : "Root length per minirhizotron frame",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root length per minirhizotron frame",
+        "titles" : "SE_Root length per minirhizotron frame",
+        "datatype" : "string"
+      }, {
+        "name" : "Root length per minirhizotron surface area",
+        "titles" : "Root length per minirhizotron surface area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root length per minirhizotron surface area",
+        "titles" : "SE_Root length per minirhizotron surface area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root length per plant",
+        "titles" : "Root length per plant",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root length per plant",
+        "titles" : "n_Root length per plant",
+        "datatype" : "string"
+      }, {
+        "name" : "Root length ratio (RLR)",
+        "titles" : "Root length ratio (RLR)",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root length ratio (RLR)",
+        "titles" : "n_Root length ratio (RLR)",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root length ratio (RLR)",
+        "titles" : "SE_Root length ratio (RLR)",
+        "datatype" : "string"
+      }, {
+        "name" : "Root length fraction per species",
+        "titles" : "Root length fraction per species",
+        "datatype" : "string"
+      }, {
+        "name" : "Root N content per ground area",
+        "titles" : "Root N content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root N content per ground area",
+        "titles" : "n_Root N content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root N content per ground area",
+        "titles" : "SE_Root N content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root N mass per soil mass",
+        "titles" : "Root N mass per soil mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root N mass per soil mass",
+        "titles" : "SE_Root N mass per soil mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Root surface area per ground area",
+        "titles" : "Root surface area per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root surface area per ground area",
+        "titles" : "n_Root surface area per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root surface area per ground area",
+        "titles" : "SE_Root surface area per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Root volume per ground area",
+        "titles" : "Root volume per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Root volume per ground area",
+        "titles" : "n_Root volume per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root volume per ground area",
+        "titles" : "SE_Root volume per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Climate",
+        "titles" : "Climate",
+        "datatype" : "string"
+      }, {
+        "name" : "Climate_PFT_Biome equivalent_Poulter",
+        "titles" : "Climate_PFT_Biome equivalent_Poulter",
+        "datatype" : "string"
+      }, {
+        "name" : "Climate_Koeppen-Geiger classification",
+        "titles" : "Climate_Koeppen-Geiger classification",
+        "datatype" : "string"
+      }, {
+        "name" : "Elevation",
+        "titles" : "Elevation",
+        "datatype" : "string"
+      }, {
+        "name" : "Mean annual precipitation (MAP)",
+        "titles" : "Mean annual precipitation (MAP)",
+        "datatype" : "string"
+      }, {
+        "name" : "Air temperature_Coldest month",
+        "titles" : "Air temperature_Coldest month",
+        "datatype" : "string"
+      }, {
+        "name" : "Air temperature_Warmest month",
+        "titles" : "Air temperature_Warmest month",
+        "datatype" : "string"
+      }, {
+        "name" : "Mean annual air temperature (MAT)",
+        "titles" : "Mean annual air temperature (MAT)",
+        "datatype" : "string"
+      }, {
+        "name" : "Slope",
+        "titles" : "Slope",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil water_Water table depth",
+        "titles" : "Soil water_Water table depth",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Soil water_Water table depth",
+        "titles" : "Min_Soil water_Water table depth",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Soil water_Water table depth",
+        "titles" : "Max_Soil water_Water table depth",
+        "datatype" : "string"
+      }, {
+        "name" : "Latitude_Main",
+        "titles" : "Latitude_Main",
+        "datatype" : "string"
+      }, {
+        "name" : "Longitude_Main",
+        "titles" : "Longitude_Main",
+        "datatype" : "string"
+      }, {
+        "name" : "decimalLatitude",
+        "titles" : "Latitude",
+        "datatype" : "string"
+      }, {
+        "name" : "decimalLongitude",
+        "titles" : "Longitude",
+        "datatype" : "string"
+      }, {
+        "name" : "Latitude_Estimated",
+        "titles" : "Latitude_Estimated",
+        "datatype" : "string"
+      }, {
+        "name" : "Longitude_Estimated",
+        "titles" : "Longitude_Estimated",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Latitude",
+        "titles" : "Min_Latitude",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Latitude",
+        "titles" : "Max_Latitude",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Longitude",
+        "titles" : "Min_Longitude",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Longitude",
+        "titles" : "Max_Longitude",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Location",
+        "titles" : "Notes_Location",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_In situ, pot, or hydroponic",
+        "titles" : "Notes_In situ, pot, or hydroponic",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Indoor or outdoor",
+        "titles" : "Notes_Indoor or outdoor",
+        "datatype" : "string"
+      }, {
+        "name" : "http://rs.tdwg.org/dwc/terms/eventDate",
+        "titles" : "Sample collection_Measurement year",
+        "datatype" : "string"
+      }, {
+        "name" : "Sample collection_Measurement month",
+        "titles" : "Sample collection_Measurement month",
+        "datatype" : "string"
+      }, {
+        "name" : "Sample collection_Measurement day",
+        "titles" : "Sample collection_Measurement day",
+        "datatype" : "string"
+      }, {
+        "name" : "Sample collection_Year beginning collection",
+        "titles" : "Sample collection_Year beginning collection",
+        "datatype" : "string"
+      }, {
+        "name" : "Sample collection_Month beginning collection",
+        "titles" : "Sample collection_Month beginning collection",
+        "datatype" : "string"
+      }, {
+        "name" : "Sample collection_Day beginning collection",
+        "titles" : "Sample collection_Day beginning collection",
+        "datatype" : "string"
+      }, {
+        "name" : "Sample collection_Year ending collection",
+        "titles" : "Sample collection_Year ending collection",
+        "datatype" : "string"
+      }, {
+        "name" : "Sample collection_Month ending collection",
+        "titles" : "Sample collection_Month ending collection",
+        "datatype" : "string"
+      }, {
+        "name" : "Sample collection_Day ending collection",
+        "titles" : "Sample collection_Day ending collection",
+        "datatype" : "string"
+      }, {
+        "name" : "Chamber_Photoperiod",
+        "titles" : "Chamber_Photoperiod",
+        "datatype" : "string"
+      }, {
+        "name" : "Chamber_Temperature_day",
+        "titles" : "Chamber_Temperature_day",
+        "datatype" : "string"
+      }, {
+        "name" : "Chamber_Temperature_night",
+        "titles" : "Chamber_Temperature_night",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Temperature of respiration chamber",
+        "titles" : "Notes_Temperature of respiration chamber",
+        "datatype" : "string"
+      }, {
+        "name" : "Exposition period_Main",
+        "titles" : "Exposition period_Main",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Collection method",
+        "titles" : "Notes_Collection method",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Treatment types",
+        "titles" : "Notes_Treatment types",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Treatments",
+        "titles" : "Notes_Treatments",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Treatment extent",
+        "titles" : "Notes_Treatment extent",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Units for extent of treatment",
+        "titles" : "Notes_Units for extent of treatment",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil horizon",
+        "titles" : "Soil horizon",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil depth",
+        "titles" : "Soil depth",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil texture",
+        "titles" : "Soil texture",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil texture_Fraction sand",
+        "titles" : "Soil texture_Fraction sand",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil texture_Fraction silt",
+        "titles" : "Soil texture_Fraction silt",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil texture_Fraction clay",
+        "titles" : "Soil texture_Fraction clay",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil bulk density",
+        "titles" : "Soil bulk density",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil bulk density",
+        "titles" : "SE_Soil bulk density",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil bulk density_Isolated aggregates",
+        "titles" : "Soil bulk density_Isolated aggregates",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil bulk density_Isolated aggregates",
+        "titles" : "SE_Soil bulk density_Isolated aggregates",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil aggregate stability in sodium oxalate fraction",
+        "titles" : "Soil aggregate stability in sodium oxalate fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil aggregate stability in water fraction",
+        "titles" : "Soil aggregate stability in water fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Soil type",
+        "titles" : "Notes_Soil type",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil pH_Water",
+        "titles" : "Soil pH_Water",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil pH_Water",
+        "titles" : "SE_Soil pH_Water",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Soil pH_Water",
+        "titles" : "Notes_Soil pH_Water",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil pH_Salt",
+        "titles" : "Soil pH_Salt",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Soil pH_Salt",
+        "titles" : "Notes_Soil pH_Salt",
+        "datatype" : "string"
+      }, {
+        "name" : "Root pH_Water",
+        "titles" : "Root pH_Water",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Root pH_Water",
+        "titles" : "SE_Root pH_Water",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil organic matter content",
+        "titles" : "Soil organic matter content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil organic matter content",
+        "titles" : "SE_Soil organic matter content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil C content",
+        "titles" : "Soil C content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Soil C content",
+        "titles" : "n_Soil C content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_soil C content",
+        "titles" : "SE_soil C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil C content per ground area",
+        "titles" : "Soil C content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Soil C content per ground area",
+        "titles" : "n_Soil C content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil C content per ground area",
+        "titles" : "SE_Soil C content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil organic C content",
+        "titles" : "Soil organic C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil C/N ratio",
+        "titles" : "Soil C/N ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Soil C/N ratio",
+        "titles" : "n_Soil C/N ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil C/N ratio",
+        "titles" : "SE_Soil C/N ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil N content",
+        "titles" : "Soil N content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil N content",
+        "titles" : "SE_Soil N content",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Soil N content",
+        "titles" : "SD_Soil N content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil N content per ground area",
+        "titles" : "Soil N content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Soil N content per ground area",
+        "titles" : "n_Soil N content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil N content per ground area",
+        "titles" : "SE_Soil N content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil N_Mineral N content",
+        "titles" : "Soil N_Mineral N content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil N_Hydrolytic content",
+        "titles" : "Soil N_Hydrolytic content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil N_Annual available N per ground area",
+        "titles" : "Soil N_Annual available N per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil N_Available N content",
+        "titles" : "Soil N_Available N content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil N_NH4 content",
+        "titles" : "Soil N_NH4 content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil N_NH4 content",
+        "titles" : "SE_Soil N_NH4 content",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Soil N_NH4 content",
+        "titles" : "Min_Soil N_NH4 content",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Soil N_NH4 content",
+        "titles" : "Max_Soil N_NH4 content",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Soil NH4 extraction method",
+        "titles" : "Notes_Soil NH4 extraction method",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil N_Exchangeable NH4+ mass",
+        "titles" : "Soil N_Exchangeable NH4+ mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil N_Exchangeable NH4+ mass",
+        "titles" : "SE_Soil N_Exchangeable NH4+ mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil N_Daily net soil N mineralization_Lower bound",
+        "titles" : "Soil N_Daily net soil N mineralization_Lower bound",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil N_Daily net soil N mineralization_Upper bound",
+        "titles" : "Soil N_Daily net soil N mineralization_Upper bound",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil N_Gross N mineralization rate per ground area",
+        "titles" : "Soil N_Gross N mineralization rate per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Soil N_Gross N mineralization rate per ground area",
+        "titles" : "n_Soil N_Gross N mineralization rate per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil N_Gross N mineralization rate per ground area",
+        "titles" : "SE_Soil N_Gross N mineralization rate per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil N_Gross nitrification rate per ground area",
+        "titles" : "Soil N_Gross nitrification rate per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Soil N_Gross nitrification rate per ground area",
+        "titles" : "n_Soil N_Gross nitrification rate per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil N_Gross nitrification rate per ground area",
+        "titles" : "SE_Soil N_Gross nitrification rate per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil N_Exchangeable NO3- mass",
+        "titles" : "Soil N_Exchangeable NO3- mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil N_Exchangeable NO3- mass",
+        "titles" : "SE_Soil N_Exchangeable NO3- mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Soil N_NO3 content",
+        "titles" : "Min_Soil N_NO3 content",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Soil N_NO3 content",
+        "titles" : "Max_Soil N_NO3 content",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Soil NO3 extraction method",
+        "titles" : "Notes_Soil NO3 extraction method",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil P content",
+        "titles" : "Soil P content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil P content",
+        "titles" : "SE_Soil P content",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Soil P content",
+        "titles" : "SD_Soil P content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil P content per ground area",
+        "titles" : "Soil P content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Soil P content per ground area",
+        "titles" : "n_Soil P content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil P content per ground area",
+        "titles" : "SE_Soil P content per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil P_Available P content",
+        "titles" : "Soil P_Available P content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil P_Available P per ground area",
+        "titles" : "Soil P_Available P per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil P_Resin-extractable P",
+        "titles" : "Soil P_Resin-extractable P",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil P_Exchangeable PO43- mass",
+        "titles" : "Soil P_Exchangeable PO43- mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil P_Exchangeable PO43- mass",
+        "titles" : "SE_Soil P_Exchangeable PO43- mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil P_Inorganic P content_HCl extraction",
+        "titles" : "Soil P_Inorganic P content_HCl extraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil P_Inorganic P content_NaHCO3 extraction",
+        "titles" : "Soil P_Inorganic P content_NaHCO3 extraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil P_Al and Fe bound inorganic P content",
+        "titles" : "Soil P_Al and Fe bound inorganic P content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil P_Occluded inorganic P content",
+        "titles" : "Soil P_Occluded inorganic P content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil P_Organic P content_NaHCO3 extraction",
+        "titles" : "Soil P_Organic P content_NaHCO3 extraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil P_Organic P content_NaOH extraction",
+        "titles" : "Soil P_Organic P content_NaOH extraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil P_Organic P content_HCl extraction",
+        "titles" : "Soil P_Organic P content_HCl extraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil P_Total extractable content",
+        "titles" : "Soil P_Total extractable content",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Soil solution P concentration for P uptake",
+        "titles" : "Notes_Soil solution P concentration for P uptake",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Soil PO4 extraction method",
+        "titles" : "Notes_Soil PO4 extraction method",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Soil P extraction method",
+        "titles" : "Notes_Soil P extraction method",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Al content",
+        "titles" : "Soil Al content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Al_Exchangeable Al3+ mass",
+        "titles" : "Soil Al_Exchangeable Al3+ mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil Al_Exchangeable Al3+ mass",
+        "titles" : "SE_Soil Al_Exchangeable Al3+ mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Al_Exchangeable charge",
+        "titles" : "Soil Al_Exchangeable charge",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Al_saturation",
+        "titles" : "Soil Al_saturation",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Al/Ca ratio",
+        "titles" : "Soil Al/Ca ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Ca content",
+        "titles" : "Soil Ca content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Ca2+ content",
+        "titles" : "Soil Ca2+ content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Ca_Exchangeable charge",
+        "titles" : "Soil Ca_Exchangeable charge",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Ca_Exchangeable Ca2+ mass",
+        "titles" : "Soil Ca_Exchangeable Ca2+ mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil Ca_Exchangeable Ca2+ mass",
+        "titles" : "SE_Soil Ca_Exchangeable Ca2+ mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Fe content",
+        "titles" : "Soil Fe content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Fe_Exchangeable charge",
+        "titles" : "Soil Fe_Exchangeable charge",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil K content",
+        "titles" : "Soil K content",
+        "datatype" : "string"
+      }, {
+        "name" : "SD_Soil K content",
+        "titles" : "SD_Soil K content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil K_Extractable K content",
+        "titles" : "Soil K_Extractable K content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil K_Extractable K",
+        "titles" : "SE_Soil K_Extractable K",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil K_Exchangeable charge",
+        "titles" : "Soil K_Exchangeable charge",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil K_Exchangeable K+ mass",
+        "titles" : "Soil K_Exchangeable K+ mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil K_Exchangeable K+ mass",
+        "titles" : "SE_Soil K_Exchangeable K+ mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Soil K extraction method",
+        "titles" : "Notes_Soil K extraction method",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Mg content",
+        "titles" : "Soil Mg content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Mg2+ content",
+        "titles" : "Soil Mg2+ content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Mg_Exchangeable charge",
+        "titles" : "Soil Mg_Exchangeable charge",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Mg_Exchangeable Mg2+ mass",
+        "titles" : "Soil Mg_Exchangeable Mg2+ mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil Mg_Exchangeable Mg2+ mass",
+        "titles" : "SE_Soil Mg_Exchangeable Mg2+ mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Mn_Exchangeable charge",
+        "titles" : "Soil Mn_Exchangeable charge",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Na_Exchangeable charge",
+        "titles" : "Soil Na_Exchangeable charge",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Na_Exchangeable Na+ mass",
+        "titles" : "Soil Na_Exchangeable Na+ mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil Na_Exchangeable Na+ mass",
+        "titles" : "SE_Soil Na_Exchangeable Na+ mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil Zn content",
+        "titles" : "Soil Zn content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil cation exchange capacity (CEC)",
+        "titles" : "Soil cation exchange capacity (CEC)",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil effective cation exchange capacity (ECEC)",
+        "titles" : "Soil effective cation exchange capacity (ECEC)",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil base cation saturation",
+        "titles" : "Soil base cation saturation",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Soil base cation saturation",
+        "titles" : "n_Soil base cation saturation",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil base cation saturation",
+        "titles" : "SE_Soil base cation saturation",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil base cation saturation_ECEC",
+        "titles" : "Soil base cation saturation_ECEC",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil acid insoluble (lignin) fraction",
+        "titles" : "Soil acid insoluble (lignin) fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil acid soluble cellulose and hemicellulose fraction",
+        "titles" : "Soil acid soluble cellulose and hemicellulose fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil nonpolar extractable content",
+        "titles" : "Soil nonpolar extractable content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil water soluble sugar fraction",
+        "titles" : "Soil water soluble sugar fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil water soluble phenol fraction",
+        "titles" : "Soil water soluble phenol fraction",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil redox potential",
+        "titles" : "Soil redox potential",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil temperature",
+        "titles" : "Soil temperature",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil water_Gravimetric water content",
+        "titles" : "Soil water_Gravimetric water content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Soil water_Gravimetric water content",
+        "titles" : "n_Soil water_Gravimetric water content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil water_Gravimetric water content",
+        "titles" : "SE_Soil water_Gravimetric water content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil water_Volumetric content",
+        "titles" : "Soil water_Volumetric content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Soil water_Volumetric content",
+        "titles" : "n_Soil water_Volumetric content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil water_Volumetric content",
+        "titles" : "SE_Soil water_Volumetric content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil water_Potential (SWP)",
+        "titles" : "Soil water_Potential (SWP)",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil water_Matric potential",
+        "titles" : "Soil water_Matric potential",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil water_Available soil water at field capacity",
+        "titles" : "Soil water_Available soil water at field capacity",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil water_Storage capacity",
+        "titles" : "Soil water_Storage capacity",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil microbes_Microbial biomass C content in soil",
+        "titles" : "Soil microbes_Microbial biomass C content in soil",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil microbes_Microbial biomass C content_Initial",
+        "titles" : "Soil microbes_Microbial biomass C content_Initial",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil microbes_Microbial biomass N content in soil",
+        "titles" : "Soil microbes_Microbial biomass N content in soil",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil microbes_Microbial biomass N content_Initial",
+        "titles" : "Soil microbes_Microbial biomass N content_Initial",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil microbes_Microbial biomass C/N ratio",
+        "titles" : "Soil microbes_Microbial biomass C/N ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil microbes_Microbial biomass C/N ratio_Initial",
+        "titles" : "Soil microbes_Microbial biomass C/N ratio_Initial",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil microbes_Fungal/bacterial rRNA copy number ratio",
+        "titles" : "Soil microbes_Fungal/bacterial rRNA copy number ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Soil microbes_Fungal/bacterial rRNA copy number ratio",
+        "titles" : "n_Soil microbes_Fungal/bacterial rRNA copy number ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil microbes_Fungal/bacterial rRNA copy number ratio",
+        "titles" : "SE_Soil microbes_Fungal/bacterial rRNA copy number ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil microbes_Ergosterol content",
+        "titles" : "Soil microbes_Ergosterol content",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil ergosterol content",
+        "titles" : "SE_Soil ergosterol content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil microbes_PLFA proxy for fungal mass per soil mass",
+        "titles" : "Soil microbes_PLFA proxy for fungal mass per soil mass",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Soil microbes_PLFA proxy for fungal mass per soil mass",
+        "titles" : "SE_Soil microbes_PLFA proxy for fungal mass per soil mass",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil microbes_PLFA 18: 2w6.9 mass per soil mass_indicator for soil fungus",
+        "titles" : "Soil microbes_PLFA 18: 2w6.9 mass per soil mass_indicator for soil fungus",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil microbes_PLFA 18: 2w6.9 molar concentration per soil mass_indicator for soil fungus",
+        "titles" : "Soil microbes_PLFA 18: 2w6.9 molar concentration per soil mass_indicator for soil fungus",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil microbes_PLFA molar concentration per soil mass_indicator for soil microbes",
+        "titles" : "Soil microbes_PLFA molar concentration per soil mass_indicator for soil microbes",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil egosterol content",
+        "titles" : "Soil egosterol content",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Soil ergosterol content",
+        "titles" : "n_Soil ergosterol content",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil ergosterol C/microbial biomass C ratio",
+        "titles" : "Soil ergosterol C/microbial biomass C ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil egosterol content_Initial",
+        "titles" : "Soil egosterol content_Initial",
+        "datatype" : "string"
+      }, {
+        "name" : "Soil ergosterol C/microbial biomass C ratio_Initial soil",
+        "titles" : "Soil ergosterol C/microbial biomass C ratio_Initial soil",
+        "datatype" : "string"
+      }, {
+        "name" : "Rhizosphere soil_specific rhizosheath mass by FW",
+        "titles" : "Rhizosphere soil_specific rhizosheath mass by FW",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Rhizosphere soil_specific rhizosheath mass by FW",
+        "titles" : "SE_Rhizosphere soil_specific rhizosheath mass by FW",
+        "datatype" : "string"
+      }, {
+        "name" : "Rhizosphere soil_Glucosamine content",
+        "titles" : "Rhizosphere soil_Glucosamine content",
+        "datatype" : "string"
+      }, {
+        "name" : "Rhizosphere soil_Muramic acid content",
+        "titles" : "Rhizosphere soil_Muramic acid content",
+        "datatype" : "string"
+      }, {
+        "name" : "Rhizosphere soil_Fungal C content",
+        "titles" : "Rhizosphere soil_Fungal C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Rhizosphere soil_Bacterial C content",
+        "titles" : "Rhizosphere soil_Bacterial C content",
+        "datatype" : "string"
+      }, {
+        "name" : "Rhizosphere soil_Fungal C/bacterial C ratio",
+        "titles" : "Rhizosphere soil_Fungal C/bacterial C ratio",
+        "datatype" : "string"
+      }, {
+        "name" : "Stand age",
+        "titles" : "Stand age",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant age_days",
+        "titles" : "Plant age_days",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant age_years",
+        "titles" : "Plant age_years",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant age interval_Lower bound_d",
+        "titles" : "Plant age interval_Lower bound_d",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant age interval_Upper bound_d",
+        "titles" : "Plant age interval_Upper bound_d",
+        "datatype" : "string"
+      }, {
+        "name" : "Stem diameter at breast height (DBH)",
+        "titles" : "Stem diameter at breast height (DBH)",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Stem diameter at breast height (DBH)",
+        "titles" : "n_Stem diameter at breast height (DBH)",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Stem diameter at breast height (DBH)",
+        "titles" : "SE_Stem diameter at breast height (DBH)",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Stem diameter at breast height (DBH)",
+        "titles" : "Min_Stem diameter at breast height (DBH)",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Stem diameter at breast height (DBH)",
+        "titles" : "Max_Stem diameter at breast height (DBH)",
+        "datatype" : "string"
+      }, {
+        "name" : "Stand canopy height",
+        "titles" : "Stand canopy height",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Stand canopy height",
+        "titles" : "n_Stand canopy height",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Stand canopy height",
+        "titles" : "SE_Stand canopy height",
+        "datatype" : "string"
+      }, {
+        "name" : "Min_Stand canopy height",
+        "titles" : "Min_Stand canopy height",
+        "datatype" : "string"
+      }, {
+        "name" : "Max_Stand canopy height",
+        "titles" : "Max_Stand canopy height",
+        "datatype" : "string"
+      }, {
+        "name" : "Stand density_Stem number per ground area",
+        "titles" : "Stand density_Stem number per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Stand density_Stem number per ground area",
+        "titles" : "n_Stand density_Stem number per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Stand density_Stem number per ground area",
+        "titles" : "SE_Stand density_Stem number per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Stand density_Stem number per species per ground area",
+        "titles" : "Stand density_Stem number per species per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Basal area_Stem area per species per ground area",
+        "titles" : "Basal area_Stem area per species per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Basal area_Stem area per species per ground area",
+        "titles" : "n_Basal area_Stem area per species per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Basal area_Stem area per species per ground area",
+        "titles" : "SE_Basal area_Stem area per species per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Basal area_Stem area per ground area",
+        "titles" : "Basal area_Stem area per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Basal area_Stem area per ground area",
+        "titles" : "n_Basal area_Stem area per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Basal area_Stem area per ground area",
+        "titles" : "SE_Basal area_Stem area per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Leaf area index (LAI)_Per ground area",
+        "titles" : "Leaf area index (LAI)_Per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Leaf area index (LAI)_Fraction of peak",
+        "titles" : "Leaf area index (LAI)_Fraction of peak",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Leaf area index (LAI)_Fraction of peak",
+        "titles" : "SE_Leaf area index (LAI)_Fraction of peak",
+        "datatype" : "string"
+      }, {
+        "name" : "Stand fertilizer use efficiency (FUE)",
+        "titles" : "Stand fertilizer use efficiency (FUE)",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Stand fertilizer use efficiency (FUE)",
+        "titles" : "SE_Stand fertilizer use efficiency (FUE)",
+        "datatype" : "string"
+      }, {
+        "name" : "Photosynthesis per leaf area",
+        "titles" : "Photosynthesis per leaf area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Photosynthesis per leaf area",
+        "titles" : "n_Photosynthesis per leaf area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Photosynthesis per leaf area",
+        "titles" : "SE_Photosynthesis per leaf area",
+        "datatype" : "string"
+      }, {
+        "name" : "Leaf N retranslocation",
+        "titles" : "Leaf N retranslocation",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Leaf N retranslocation",
+        "titles" : "n_Leaf N retranslocation",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Leaf N retranslocation",
+        "titles" : "SE_Leaf N retranslocation",
+        "datatype" : "string"
+      }, {
+        "name" : "Total biomass per plant",
+        "titles" : "Total biomass per plant",
+        "datatype" : "string"
+      }, {
+        "name" : "Aboveground biomass per ground area",
+        "titles" : "Aboveground biomass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Aboveground biomass per ground area",
+        "titles" : "SE_Aboveground biomass per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Aboveground biomass per plant",
+        "titles" : "Aboveground biomass per plant",
+        "datatype" : "string"
+      }, {
+        "name" : "Stem mass per plant",
+        "titles" : "Stem mass per plant",
+        "datatype" : "string"
+      }, {
+        "name" : "Leaf mass per plant",
+        "titles" : "Leaf mass per plant",
+        "datatype" : "string"
+      }, {
+        "name" : "Leaf mass ratio (LMR, LWR)",
+        "titles" : "Leaf mass ratio (LMR, LWR)",
+        "datatype" : "string"
+      }, {
+        "name" : "Aboveground growth_Annual net primary production per ground area",
+        "titles" : "Aboveground growth_Annual net primary production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "n_Aboveground growth_Annual net primary production per ground area",
+        "titles" : "n_Aboveground growth_Annual net primary production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "SE_Aboveground growth_Annual net primary production per ground area",
+        "titles" : "SE_Aboveground growth_Annual net primary production per ground area",
+        "datatype" : "string"
+      }, {
+        "name" : "Aboveground annual C production",
+        "titles" : "Aboveground annual C production",
+        "datatype" : "string"
+      }, {
+        "name" : "Notes_Miscellaneous notes",
+        "titles" : "Notes_Miscellaneous notes",
+        "datatype" : "string"
+      } ]
+    }
+  } ]
+}
