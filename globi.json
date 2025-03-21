@@ -65,39 +65,39 @@
         "titles" : "Plant taxonomy_Accepted group_TPL",
         "datatype" : "string"
       }, {
-        "name" : "Plant taxonomy_Accepted order_APW",
+        "name" : "sourceTaxonOrderName",
         "titles" : "Plant taxonomy_Accepted order_APW",
         "datatype" : "string"
       }, {
-        "name" : "Plant taxonomy_Accepted family_TPL",
+        "name" : "sourceTaxonFamilyName",
         "titles" : "Plant taxonomy_Accepted family_TPL",
         "datatype" : "string"
       }, {
-        "name" : "Plant taxonomy_Accepted genus_TPL",
+        "name" : "sourceTaxonGenusName",
         "titles" : "Plant taxonomy_Accepted genus_TPL",
         "datatype" : "string"
       }, {
-        "name" : "Plant Taxonomy_Accepted species_TPL",
+        "name" : "sourceTaxonSpecificEpithetName",
         "titles" : "Plant Taxonomy_Accepted species_TPL",
         "datatype" : "string"
       }, {
-        "name" : "Plant Taxonomy_Accepted subspecies_TPL",
+        "name" : "sourceTaxonSubspecificEpithetName",
         "titles" : "Plant Taxonomy_Accepted subspecies_TPL",
         "datatype" : "string"
       }, {
-        "name" : "sourceTaxonFamilyName",
+        "name" : "Plant taxonomy_Family_Data source",
         "titles" : "Plant taxonomy_Family_Data source",
         "datatype" : "string"
       }, {
-        "name" : "sourceTaxonGenusName",
+        "name" : "Plant taxonomy_Genus_Data Source",
         "titles" : "Plant taxonomy_Genus_Data Source",
         "datatype" : "string"
       }, {
-        "name" : "sourceTaxonSpecificEpithetName",
+        "name" : "Plant taxonomy_Species_Data source",
         "titles" : "Plant taxonomy_Species_Data source",
         "datatype" : "string"
       }, {
-        "name" : "sourceTaxonSubspecificEpithetName",
+        "name" : "Plant taxonomy_Subspecies_Data source",
         "titles" : "Plant taxonomy_Subspecies_Data source",
         "datatype" : "string"
       }, {
